@@ -26,9 +26,11 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-8 sm:mb-12">
             <div>
               <div className="mb-4 sm:mb-6">
-                <div className="text-2xl font-bold text-gray-900">
-                  PRIMA <span className="text-tor-teal">Reinigungsservice</span>
-                </div>
+                <img
+                  src="/primalogo.png"
+                  alt="Prima Reinigungsservice"
+                  className="h-16 w-auto"
+                />
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 font-light">
                 Ihr zuverlässiger Partner für professionelle Reinigung in Velbert und Umgebung. Sauberkeit, Qualität und Zuverlässigkeit.

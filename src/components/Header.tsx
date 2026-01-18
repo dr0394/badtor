@@ -46,9 +46,11 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
             onClick={() => scrollToSection('hero')}
             whileHover={{ scale: 1.05 }}
           >
-            <div className="text-2xl font-bold text-gray-900">
-              PRIMA <span className="text-tor-teal">Reinigungsservice</span>
-            </div>
+            <img
+              src="/primalogo.png"
+              alt="Prima Reinigungsservice"
+              className="h-12 w-auto"
+            />
           </motion.div>
 
           <nav className="hidden lg:flex items-center gap-8">
