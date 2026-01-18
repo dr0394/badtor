@@ -47,7 +47,7 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
             whileHover={{ scale: 1.05 }}
           >
             <div className="text-2xl font-bold text-gray-900">
-              TOR <span className="text-tor-teal">GmbH</span>
+              PRIMA <span className="text-tor-teal">Reinigungsservice</span>
             </div>
           </motion.div>
 
@@ -65,17 +65,17 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
 
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+491624657495"
+              href="tel:+4920514360763"
               className="text-gray-700 hover:text-tor-teal transition-colors flex items-center gap-2"
             >
               <Phone className="w-4 h-4 stroke-[1.5]" />
-              <span className="text-sm">0162 465 7495</span>
+              <span className="text-sm">02051 / 436 0 763</span>
             </a>
             <button
               onClick={onOpenQuoteModal}
               className="bg-tor-teal hover:bg-tor-teal-light text-white px-6 py-2.5 rounded-md font-normal text-sm tracking-wide transition-all"
             >
-              Vermessungstermin buchen
+              Angebot anfordern
             </button>
           </div>
 
@@ -105,11 +105,11 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
               </button>
             ))}
             <a
-              href="tel:+491624657495"
+              href="tel:+4920514360763"
               className="flex items-center gap-2 text-tor-teal text-base font-normal py-2"
             >
               <Phone className="w-4 h-4" />
-              0162 465 7495
+              02051 / 436 0 763
             </a>
             <button
               onClick={() => {
@@ -118,7 +118,7 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
               }}
               className="w-full bg-tor-teal hover:bg-tor-teal-light text-white px-6 py-3 rounded-md font-normal text-sm tracking-wide transition-all"
             >
-              Vermessungstermin buchen
+              Angebot anfordern
             </button>
           </div>
         </motion.div>

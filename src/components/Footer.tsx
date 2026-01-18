@@ -6,11 +6,12 @@ const Footer = () => {
   const [showDatenschutz, setShowDatenschutz] = useState(false);
 
   const services = [
-    'Barrierefreie Badsanierung',
-    'Wanne-zu-Dusche-Umbau',
-    'Komplette Badsanierung',
-    'Teilsanierung & Modernisierung',
-    'Notfall-Badsanierung',
+    'Glas- & Fensterreinigung',
+    'Büro & Unterhaltsreinigung',
+    'Praxis- & Kanzleienreinigung',
+    'Treppenhausreinigung',
+    'Bau- & Grundreinigung',
+    'Hotel- & Ferienwohnung',
   ];
 
   const scrollToSection = (id: string) => {
@@ -26,11 +27,11 @@ const Footer = () => {
             <div>
               <div className="mb-4 sm:mb-6">
                 <div className="text-2xl font-bold text-gray-900">
-                  TOR <span className="text-tor-teal">GmbH</span>
+                  PRIMA <span className="text-tor-teal">Reinigungsservice</span>
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 font-light">
-                Ihr zuverlässiger Partner für barrierefreie Badsanierung in Freiburg und Stuttgart. Selbstständigkeit, Sicherheit und Lebensqualität seit 1999.
+                Ihr zuverlässiger Partner für professionelle Reinigung in Velbert und Umgebung. Sauberkeit, Qualität und Zuverlässigkeit.
               </p>
               <div className="flex gap-3">
                 <a
@@ -69,33 +70,35 @@ const Footer = () => {
               <ul className="space-y-3 text-sm">
                 <li>
                   <a
-                    href="tel:+491624657495"
+                    href="tel:+4920514360763"
                     className="text-gray-600 hover:text-tor-teal transition-colors font-light"
                   >
-                    0162 465 7495
+                    02051 / 436 0 763
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:bau@tor-bad.de"
+                    href="mailto:Info.prima.rs@gmail.com"
                     className="text-gray-600 hover:text-tor-teal transition-colors font-light"
                   >
-                    bau@tor-bad.de
+                    Info.prima.rs@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/Prima.reinigungsservice"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-tor-teal transition-colors font-light flex items-center gap-2"
+                  >
+                    <Instagram className="w-4 h-4" />
+                    Prima.reinigungsservice
                   </a>
                 </li>
                 <li className="text-gray-600 font-light">
-                  Freiburg:
+                  Einsatzgebiet:
                   <br />
-                  Engesserstraße 3
-                  <br />
-                  79108 Freiburg
-                </li>
-                <li className="text-gray-600 font-light">
-                  Stuttgart:
-                  <br />
-                  Hasenbergstr. 40
-                  <br />
-                  70175 Stuttgart
+                  Velbert & Umgebung
                 </li>
               </ul>
             </div>
@@ -121,19 +124,19 @@ const Footer = () => {
                 </li>
               </ul>
               <div className="mt-6 bg-white border border-gray-200 rounded-lg p-4">
-                <div className="text-xs text-gray-500 mb-2 font-light">Seit 1999</div>
-                <div className="text-sm font-normal text-gray-900">25+ Jahre</div>
-                <div className="text-xs text-gray-500 font-light">Erfahrung</div>
+                <div className="text-xs text-gray-500 mb-2 font-light">Service-Qualität</div>
+                <div className="text-sm font-normal text-gray-900">100%</div>
+                <div className="text-xs text-gray-500 font-light">Zufriedenheit</div>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-200 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
             <div className="text-sm text-gray-500 font-light">
-              © 2024 TOR GmbH. Alle Rechte vorbehalten.
+              © 2024 Prima Reinigungsservice. Alle Rechte vorbehalten.
             </div>
             <div className="text-sm text-gray-500 font-light">
-              Barrierefreie Badsanierung in Freiburg & Stuttgart
+              Professionelle Reinigung in Velbert & Umgebung
             </div>
           </div>
         </div>
@@ -155,18 +158,10 @@ const Footer = () => {
               <div>
                 <h3 className="font-normal text-lg mb-3 text-gray-900">Angaben gemäß § 5 TMG</h3>
                 <div className="text-gray-600 font-light leading-relaxed space-y-2">
-                  <p>TOR GmbH</p>
-                  <p>Geschäftsführer: Fedor Sverdlov (Dipl.-Bauingenieur, MBA)</p>
-                  <p>Gründungsjahr: 1999</p>
+                  <p>Prima Reinigungsservice</p>
                   <div className="mt-4">
-                    <p className="font-normal text-gray-900 mb-2">Standort Freiburg:</p>
-                    <p>Engesserstraße 3</p>
-                    <p>79108 Freiburg</p>
-                  </div>
-                  <div className="mt-4">
-                    <p className="font-normal text-gray-900 mb-2">Standort Stuttgart:</p>
-                    <p>Hasenbergstr. 40</p>
-                    <p>70175 Stuttgart</p>
+                    <p className="font-normal text-gray-900 mb-2">Einsatzgebiet:</p>
+                    <p>Velbert & Umgebung</p>
                   </div>
                 </div>
               </div>
@@ -174,22 +169,16 @@ const Footer = () => {
               <div>
                 <h3 className="font-normal text-lg mb-3 text-gray-900">Kontakt</h3>
                 <div className="text-gray-600 font-light leading-relaxed space-y-2">
-                  <p>Telefon: 0162 465 7495</p>
-                  <p>E-Mail: bau@tor-bad.de</p>
+                  <p>Telefon: 02051 / 436 0 763</p>
+                  <p>E-Mail: Info.prima.rs@gmail.com</p>
+                  <p>Instagram: @Prima.reinigungsservice</p>
                 </div>
-              </div>
-
-              <div>
-                <h3 className="font-normal text-lg mb-3 text-gray-900">Geschäftsform</h3>
-                <p className="text-gray-600 font-light leading-relaxed">
-                  GmbH mit Sitz in Freiburg
-                </p>
               </div>
 
               <div>
                 <h3 className="font-normal text-lg mb-3 text-gray-900">Verantwortlich für den Inhalt</h3>
                 <p className="text-gray-600 font-light leading-relaxed">
-                  Fedor Sverdlov (Anschrift siehe oben)
+                  Prima Reinigungsservice (Anschrift siehe oben)
                 </p>
               </div>
 
@@ -240,7 +229,7 @@ const Footer = () => {
               <div>
                 <h3 className="font-normal text-lg mb-3 text-gray-900">2. Verantwortliche Stelle</h3>
                 <p className="text-gray-600 font-light leading-relaxed">
-                  Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist die TOR GmbH. Die Kontaktdaten können Sie
+                  Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist Prima Reinigungsservice. Die Kontaktdaten können Sie
                   dem Impressum dieser Website entnehmen. Verantwortliche Stelle ist die natürliche oder juristische Person, die allein
                   oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
                 </p>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Bath, Shield, Clock, Award, ChevronDown, Star } from 'lucide-react';
+import { Sparkles, Shield, Clock, Award, ChevronDown, Star } from 'lucide-react';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
 interface HeroProps {
@@ -10,10 +10,10 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
   const isMobile = useReducedMotion();
 
   const features = [
-    { icon: Bath, title: 'Barrierefreie Bäder', subtitle: 'In 3-5 Tagen' },
-    { icon: Shield, title: 'Seit 1999', subtitle: 'Erfahrung & Qualität' },
-    { icon: Clock, title: 'Schnelle Umsetzung', subtitle: 'Ohne lange Wartezeiten' },
-    { icon: Award, title: 'Maßgeschneidert', subtitle: 'Nach Ihren Wünschen' },
+    { icon: Sparkles, title: 'Professionelle Reinigung', subtitle: 'Für alle Bereiche' },
+    { icon: Shield, title: 'Zuverlässig', subtitle: 'Erfahrung & Qualität' },
+    { icon: Clock, title: 'Flexibel', subtitle: 'Nach Ihrem Zeitplan' },
+    { icon: Award, title: 'Maßgeschneidert', subtitle: 'Individuelle Lösungen' },
   ];
 
   return (
@@ -21,8 +21,8 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-white via-tor-beige/60 to-tor-beige/30 z-10" />
         <img
-          src="https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Wanne zu Dusche Umbau"
+          src="https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Professionelle Reinigung"
           className="w-full h-full object-cover opacity-40"
         />
       </div>
@@ -42,7 +42,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             >
               <div className="bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-8">
                 <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">
-                  Ihr Partner in Freiburg & Stuttgart
+                  Ihr Partner in Velbert & Umgebung
                 </span>
               </div>
             </motion.div>
@@ -53,9 +53,9 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               transition={{ delay: 0.4 }}
               className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight mb-8 leading-[1.15] text-gray-900"
             >
-              Barrierefreie Bäder in 3–5 Tagen –
+              Professionelle Reinigung –
               <br />
-              <span className="text-tor-teal font-normal italic">Ihre neue Wohlfühloase</span>
+              <span className="text-tor-teal font-normal italic">Für Ihr sauberes Zuhause</span>
             </motion.h1>
 
             <motion.p
@@ -64,7 +64,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               transition={{ delay: 0.5 }}
               className="text-lg text-gray-600 mb-10 font-light leading-relaxed max-w-xl"
             >
-              Wir verwandeln Ihr Bad in einen sicheren und komfortablen Raum – maßgeschneidert für Ihre Bedürfnisse. Spezialisiert auf barrierefreie Badezimmer und Wannen-zu-Dusche-Umbauten.
+              Von Glas- und Fensterreinigung bis zur Büroreinigung – wir sorgen für makellose Sauberkeit in allen Bereichen. Zuverlässig, gründlich und termingerecht.
             </motion.p>
 
             <motion.div
@@ -99,7 +99,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
                   onClick={onOpenQuoteModal}
                   className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all"
                 >
-                  Vermessungstermin vereinbaren
+                  Kostenlos anfragen
                 </motion.button>
                 <motion.button
                   whileHover={isMobile ? {} : { scale: 1.02 }}
@@ -144,19 +144,19 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             className="hidden lg:block relative"
           >
             <div className="absolute -top-4 -right-4 bg-tor-teal px-6 py-3 rounded-lg shadow-xl z-10">
-              <div className="text-[10px] font-light tracking-[0.15em] text-white/90 uppercase">Standorte</div>
-              <div className="text-lg font-normal text-white">Freiburg & Stuttgart</div>
+              <div className="text-[10px] font-light tracking-[0.15em] text-white/90 uppercase">Einsatzgebiet</div>
+              <div className="text-lg font-normal text-white">Velbert & Umgebung</div>
             </div>
             <div className="relative rounded-2xl overflow-hidden border border-tor-teal/30 shadow-xl">
               <img
-                src="https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Komplette Badsanierung"
+                src="https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Professionelle Reinigung"
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tor-teal/80 to-transparent p-8">
-                <div className="text-2xl font-light tracking-wide mb-2 text-white">Qualität & Erfahrung seit 1999</div>
+                <div className="text-2xl font-light tracking-wide mb-2 text-white">Qualität & Zuverlässigkeit</div>
                 <div className="text-white/90 font-light text-sm">
-                  Traditionelle Bauweise des Schwarzwaldes trifft auf moderne Technologie
+                  Professionelle Reinigung für Büro, Praxis, Hotel und Privat
                 </div>
               </div>
             </div>

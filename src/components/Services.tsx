@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Bath, Accessibility, Droplet, Hammer, Shield, ArrowRight } from 'lucide-react';
+import { Sparkles, Building2, Stethoscope, Home, Hammer, Hotel, ArrowRight } from 'lucide-react';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 import { useState } from 'react';
 import ServiceModal from './ServiceModal';
@@ -14,128 +14,153 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
 
   const services = [
     {
-      icon: Accessibility,
-      title: 'Barrierefreie Badsanierung',
-      shortDesc: 'Sicher und komfortabel für jedes Alter',
-      fullDesc: 'Wir machen Ihr Badezimmer barrierefrei und schaffen einen sicheren, komfortablen Raum. Bodengleiche Duschen, breite Türen, Haltegriffe und ergonomische Armaturen sorgen für maximale Sicherheit und Selbstständigkeit.',
-      image: 'https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=800',
-      cta: 'Barrierefreies Bad planen',
+      icon: Sparkles,
+      title: 'Glas- & Fensterreinigung',
+      shortDesc: 'Kristallklare Fenster für mehr Durchblick',
+      fullDesc: 'Professionelle Glas- und Fensterreinigung für Privat- und Geschäftskunden. Streifenfreie Ergebnisse und strahlende Sauberkeit für alle Glasflächen.',
+      image: 'https://images.pexels.com/photos/4239119/pexels-photo-4239119.jpeg?auto=compress&cs=tinysrgb&w=800',
+      cta: 'Fensterreinigung buchen',
       details: [
-        'Bodengleiche, befahrbare Duschen für Rollstuhl und Rollator',
-        'Rutschfeste Bodenbeläge für maximale Sicherheit',
-        'Ergonomische Haltegriffe an allen wichtigen Stellen',
-        'Unterfahrbare Waschtische',
-        'Höhenverstellbare WCs',
-        'Schwellenfreie Zugänge',
-        'Optimale Beleuchtung für bessere Sicht'
+        'Innen- und Außenreinigung aller Fenster',
+        'Rahmen- und Fensterbankpflege',
+        'Entfernung hartnäckiger Verschmutzungen',
+        'Streifenfreie Reinigung',
+        'Auch für schwer zugängliche Fenster',
+        'Regelmäßige Wartungsverträge möglich',
+        'Umweltfreundliche Reinigungsmittel'
       ],
       benefits: [
-        'Mehr Selbstständigkeit im Alltag',
-        'Erhöhte Sicherheit und Sturzprävention',
-        'Komfort für alle Altersgruppen',
-        'Wertsteigerung Ihrer Immobilie',
-        'Umsetzung in 3-5 Tagen',
-        'Förderungsfähig durch KfW'
+        'Kristallklare Sicht',
+        'Mehr Lichteinfall',
+        'Professionelles Ergebnis',
+        'Zeitersparnis',
+        'Sichere Arbeit auch in der Höhe',
+        'Flexible Terminvereinbarung'
       ]
     },
     {
-      icon: Droplet,
-      title: 'Wanne-zu-Dusche-Umbau',
-      shortDesc: 'Aus Ihrer Badewanne wird eine moderne Dusche',
-      fullDesc: 'Ersetzen Sie Ihre alte Badewanne durch eine geräumige, ebenerdige Dusche. Perfekt für Senioren und Menschen mit eingeschränkter Mobilität. Der Umbau erfolgt schnell, sauber und ohne große Baumaßnahmen.',
-      image: 'https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=800',
-      cta: 'Duschumbau anfragen',
+      icon: Building2,
+      title: 'Büro & Unterhaltsreinigung',
+      shortDesc: 'Saubere Arbeitsumgebung für produktives Arbeiten',
+      fullDesc: 'Regelmäßige und zuverlässige Büroreinigung für ein gepflegtes Arbeitsumfeld. Wir sorgen für Sauberkeit und Hygiene in Ihren Geschäftsräumen.',
+      image: 'https://images.pexels.com/photos/4239039/pexels-photo-4239039.jpeg?auto=compress&cs=tinysrgb&w=800',
+      cta: 'Büroreinigung anfragen',
       details: [
-        'Entfernung der alten Badewanne',
-        'Installation einer bodengleichen Dusche',
-        'Montage von Duschkabine oder -vorhang',
-        'Rutschfeste Duschböden',
-        'Moderne Armaturen und Duschsysteme',
-        'Fliesenarbeiten und Abdichtung',
-        'Befahrbar mit Rollstuhl oder Rollator'
+        'Tägliche oder wöchentliche Reinigung',
+        'Staubsaugen und Bodenpflege',
+        'Schreibtisch- und Oberflächenreinigung',
+        'Sanitärreinigung und -desinfektion',
+        'Papierkorb-Entleerung',
+        'Küchen- und Pausenraumreinigung',
+        'Individuelle Reinigungspläne'
       ],
       benefits: [
-        'Leichter Ein- und Ausstieg',
-        'Mehr Bewegungsfreiheit',
-        'Geringerer Wasserverbrauch',
-        'Modernes Design',
-        'Schnelle Umsetzung in 3-5 Tagen',
-        'Pflegeleicht und hygienisch'
+        'Gesundes Arbeitsklima',
+        'Professioneller Eindruck',
+        'Erhöhte Mitarbeiterzufriedenheit',
+        'Flexible Reinigungszeiten',
+        'Zuverlässiger Service',
+        'Transparente Preisgestaltung'
       ]
     },
     {
-      icon: Bath,
-      title: 'Komplette Badsanierung',
-      shortDesc: 'Ihr Traumbad nach Ihren Wünschen',
-      fullDesc: 'Von der Planung bis zur Fertigstellung übernehmen wir die komplette Sanierung Ihres Badezimmers. Maßgeschneiderte Lösungen, hochwertige Materialien und professionelle Handwerkskunst aus einer Hand.',
-      image: 'https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=800',
-      cta: 'Komplettsanierung planen',
+      icon: Stethoscope,
+      title: 'Praxis- & Kanzleienreinigung',
+      shortDesc: 'Hygiene und Sauberkeit für höchste Ansprüche',
+      fullDesc: 'Spezialisierte Reinigung für Arztpraxen, Kanzleien und professionelle Büros. Höchste Hygienestandards und diskrete Arbeitsweise.',
+      image: 'https://images.pexels.com/photos/4107283/pexels-photo-4107283.jpeg?auto=compress&cs=tinysrgb&w=800',
+      cta: 'Praxisreinigung planen',
       details: [
-        'Individuelle Planung durch Architekten',
-        'Demontage der alten Sanitärinstallationen',
-        'Neue Fliesen, Böden und Wandgestaltung',
-        'Installation moderner Sanitärobjekte',
-        'Elektroarbeiten und Beleuchtung',
-        'Lüftung und Heizung',
-        'Abschließende Reinigung und Übergabe'
+        'Desinfektion nach medizinischen Standards',
+        'Wartezimmer und Behandlungsräume',
+        'Sanitäre Anlagen nach Hygienevorschriften',
+        'Empfangsbereich und Flure',
+        'Diskrete Arbeitsweise außerhalb der Öffnungszeiten',
+        'Spezielle Reinigung medizinischer Geräte',
+        'Dokumentierte Reinigungsprotokolle'
       ],
       benefits: [
-        'Alles aus einer Hand',
-        'Individuelle Gestaltung',
-        'Hochwertige Materialien',
-        'Transparente Kostenplanung',
-        'Erfahrenes Team',
-        'Termingerechte Fertigstellung'
+        'Höchste Hygienestandards',
+        'Vertrauensvolle Zusammenarbeit',
+        'Fachgerechte Desinfektion',
+        'Patientensicherheit',
+        'Einhaltung aller Vorschriften',
+        'Zertifizierte Reinigung'
+      ]
+    },
+    {
+      icon: Home,
+      title: 'Treppenhausreinigung',
+      shortDesc: 'Saubere und gepflegte Eingangsbereiche',
+      fullDesc: 'Regelmäßige Treppenhausreinigung für Wohngebäude und Mehrfamilienhäuser. Für einen einladenden ersten Eindruck.',
+      image: 'https://images.pexels.com/photos/1904769/pexels-photo-1904769.jpeg?auto=compress&cs=tinysrgb&w=800',
+      cta: 'Treppenhausreinigung buchen',
+      details: [
+        'Treppenstufen und Handläufe',
+        'Fußleisten und Fensterbänke',
+        'Briefkästen und Klingelschilder',
+        'Eingangsbereiche und Flure',
+        'Aufzüge und Fahrstühle',
+        'Keller- und Dachbodenzugänge',
+        'Wöchentliche oder 14-tägige Reinigung'
+      ],
+      benefits: [
+        'Gepflegter Eingangsbereich',
+        'Erhöhte Wohnqualität',
+        'Wertsteigerung der Immobilie',
+        'Zufriedene Mieter',
+        'Regelmäßige Pflege',
+        'Faire Preise'
       ]
     },
     {
       icon: Hammer,
-      title: 'Teilsanierung & Modernisierung',
-      shortDesc: 'Gezielte Verbesserungen für Ihr Bad',
-      fullDesc: 'Nicht immer ist eine Komplettsanierung nötig. Wir modernisieren gezielt einzelne Bereiche Ihres Bades – neue Armaturen, Fliesen, Dusche oder Beleuchtung nach Ihren Wünschen.',
-      image: 'https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=800',
-      cta: 'Modernisierung besprechen',
+      title: 'Bau- & Grundreinigung',
+      shortDesc: 'Nach der Baustelle kommt die Sauberkeit',
+      fullDesc: 'Professionelle Endreinigung nach Bau- und Renovierungsarbeiten. Wir entfernen Baustaub und -schmutz gründlich und hinterlassen bezugsfertige Räume.',
+      image: 'https://images.pexels.com/photos/5691607/pexels-photo-5691607.jpeg?auto=compress&cs=tinysrgb&w=800',
+      cta: 'Baureinigung anfragen',
       details: [
-        'Austausch einzelner Sanitärobjekte',
-        'Neue Armaturen und Duschsysteme',
-        'Fliesenerneuerung in Teilbereichen',
-        'LED-Beleuchtungskonzepte',
-        'Neue Waschtische und Unterschränke',
-        'Spiegelschränke und Accessoires',
-        'Modernisierung der Heizung'
+        'Grobe und feine Bauendreinigung',
+        'Entfernung von Farb- und Kleberesten',
+        'Fenster- und Rahmenreinigung',
+        'Boden- und Fliesenreinigung',
+        'Sanitäreinrichtungen reinigen',
+        'Entfernung von Baustaub und Schmutz',
+        'Grundreinigung vor Bezug'
       ],
       benefits: [
-        'Kostengünstige Alternative',
-        'Schnelle Umsetzung',
-        'Gezielte Verbesserungen',
-        'Weniger Aufwand',
-        'Moderne Optik',
-        'Wertsteigerung'
+        'Bezugsfertige Räume',
+        'Gründliche Reinigung',
+        'Professionelle Ausrüstung',
+        'Schnelle Abwicklung',
+        'Erfahrung mit Baustellen',
+        'Zuverlässige Durchführung'
       ]
     },
     {
-      icon: Shield,
-      title: 'Notfall-Badsanierung',
-      shortDesc: 'Schnelle Hilfe bei Wasserschäden',
-      fullDesc: 'Bei Wasserschäden oder defekten Leitungen ist schnelles Handeln gefragt. Wir sanieren Ihr Bad nach Wasserschäden professionell und helfen bei der Schadensabwicklung.',
-      image: 'https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=800',
-      cta: 'Notfall melden',
+      icon: Hotel,
+      title: 'Hotel- & Ferienwohnung',
+      shortDesc: 'Perfekte Sauberkeit für Ihre Gäste',
+      fullDesc: 'Spezialisierte Reinigung für Hotels, Pensionen und Ferienwohnungen. Schneller Wechselservice und höchste Qualitätsstandards für zufriedene Gäste.',
+      image: 'https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800',
+      cta: 'Hotelreinigung besprechen',
       details: [
-        'Sofortige Schadensaufnahme',
-        'Trocknung der betroffenen Bereiche',
-        'Entfernung beschädigter Materialien',
-        'Neuinstallation der Sanitäranlagen',
-        'Fliesenarbeiten und Abdichtung',
-        'Unterstützung bei Versicherungsfragen',
-        'Schnellstmögliche Wiederherstellung'
+        'Zimmerreinigung zwischen Gästen',
+        'Bettwäsche und Handtuchwechsel',
+        'Badezimmerreinigung und -desinfektion',
+        'Staubsaugen und Bodenpflege',
+        'Auffüllen von Amenities',
+        'Küchen- und Gemeinschaftsräume',
+        'Flexibler Check-in/Check-out Service'
       ],
       benefits: [
-        'Schnelle Reaktionszeit',
-        'Erfahrung mit Versicherungen',
-        'Professionelle Trocknung',
-        'Schadensbegrenzung',
-        'Komplette Wiederherstellung',
-        'Beratung zur Prävention'
+        'Zufriedene Gäste',
+        'Positive Bewertungen',
+        'Schneller Wechselservice',
+        'Höchste Sauberkeitsstandards',
+        'Flexible Einsatzzeiten',
+        'Erfahrung im Gastgewerbe'
       ]
     },
   ];
@@ -159,12 +184,12 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
               <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Unsere Leistungen</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
-              Professionelle Badsanierung
+              Professionelle Reinigung
               <br />
               <span className="text-tor-teal font-normal italic">für jeden Bedarf</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed">
-              Von barrierefreien Bädern bis zur Komplettmodernisierung – wir bieten Ihnen das komplette Leistungsspektrum aus einer Hand
+              Von Fensterreinigung bis zur Hotelreinigung – wir bieten Ihnen das komplette Leistungsspektrum aus einer Hand
             </p>
           </motion.div>
 
@@ -218,7 +243,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
                 Haben Sie spezielle Anforderungen?
               </h3>
               <p className="text-base text-gray-600 font-light leading-relaxed mb-6 max-w-2xl mx-auto">
-                Kontaktieren Sie uns für eine individuelle Beratung und kostenlosen Vermessungstermin. Wir erstellen Ihnen ein maßgeschneidertes Angebot.
+                Kontaktieren Sie uns für eine individuelle Beratung und kostenloses Angebot. Wir erstellen Ihnen ein maßgeschneidertes Reinigungskonzept.
               </p>
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.02 }}
@@ -226,7 +251,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
                 onClick={onOpenQuoteModal}
                 className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2 shadow-lg"
               >
-                Jetzt Vermessungstermin buchen
+                Jetzt Angebot anfordern
                 <ArrowRight className="w-4 h-4" />
               </motion.button>
             </div>

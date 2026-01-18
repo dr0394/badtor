@@ -15,7 +15,7 @@ function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   useEffect(() => {
-    document.title = 'TOR GmbH – Barrierefreie Badsanierung Freiburg & Stuttgart | Badumbau in 3-5 Tagen';
+    document.title = 'Prima Reinigungsservice – Professionelle Reinigung in Velbert & Umgebung';
   }, []);
 
   return (

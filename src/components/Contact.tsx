@@ -33,31 +33,25 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
     {
       icon: Phone,
       label: 'Telefon',
-      value: '0162 465 7495',
-      link: 'tel:+491624657495',
+      value: '02051 / 436 0 763',
+      link: 'tel:+4920514360763',
     },
     {
       icon: Mail,
       label: 'E-Mail',
-      value: 'bau@tor-bad.de',
-      link: 'mailto:bau@tor-bad.de',
+      value: 'Info.prima.rs@gmail.com',
+      link: 'mailto:Info.prima.rs@gmail.com',
     },
     {
       icon: MapPin,
-      label: 'Freiburg',
-      value: 'Engesserstraße 3, 79108 Freiburg',
-      link: 'https://maps.google.com/?q=Engesserstraße+3+Freiburg',
-    },
-    {
-      icon: MapPin,
-      label: 'Stuttgart',
-      value: 'Hasenbergstr. 40, 70175 Stuttgart',
-      link: 'https://maps.google.com/?q=Hasenbergstr+40+Stuttgart',
+      label: 'Standort',
+      value: 'Velbert & Umgebung',
+      link: 'https://maps.google.com/?q=Velbert',
     },
     {
       icon: Clock,
-      label: 'Öffnungszeiten',
-      value: 'Mo-Fr 8:00-17:00 Uhr',
+      label: 'Erreichbarkeit',
+      value: 'Mo-Fr 8:00-18:00 Uhr',
       link: null,
     },
   ];
@@ -75,12 +69,12 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
             <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Kontakt</span>
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
-            Ihr Traumbad beginnt
+            Sauberkeit beginnt
             <br />
-            <span className="text-tor-teal font-normal italic">mit einem Gespräch</span>
+            <span className="text-tor-teal font-normal italic">mit einem Anruf</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed mb-6">
-            Kontaktieren Sie uns für eine kostenlose Beratung und Vermessungstermin. Wir erstellen Ihnen ein unverbindliches Angebot
+            Kontaktieren Sie uns für eine kostenlose Beratung. Wir erstellen Ihnen ein unverbindliches Angebot
           </p>
           <motion.button
             whileHover={isMobile ? {} : { scale: 1.02 }}
@@ -128,9 +122,9 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
               viewport={{ once: true }}
               className="bg-white border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="font-normal text-base mb-2 text-gray-900">Unsere Standorte</h3>
+              <h3 className="font-normal text-base mb-2 text-gray-900">Unser Einsatzgebiet</h3>
               <p className="text-sm text-gray-500 font-light mb-4">
-                Wir sind für Sie in Freiburg und Stuttgart vor Ort
+                Wir sind für Sie in Velbert und Umgebung im Einsatz
               </p>
               <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
                 <MapPin className="w-10 h-10 text-tor-teal stroke-[1.5]" />

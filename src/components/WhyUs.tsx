@@ -8,33 +8,33 @@ const WhyUs = () => {
   const reasons = [
     {
       icon: Shield,
-      title: 'Seit 1999 – Tradition & Innovation',
-      description: 'Schwarzwälder Bauweise trifft moderne Technologie für höchste Qualität'
+      title: 'Zuverlässig & Vertrauenswürdig',
+      description: 'Pünktlich, diskret und mit höchster Sorgfalt für Ihre Zufriedenheit'
     },
     {
       icon: Users,
-      title: 'Kompetentes Team',
-      description: 'Hauseigene Architekten und erfahrene Handwerker für Ihr Projekt'
+      title: 'Geschultes Personal',
+      description: 'Professionelle und freundliche Mitarbeiter mit langjähriger Erfahrung'
     },
     {
       icon: Award,
       title: 'Höchste Qualitätsstandards',
-      description: 'Nur langlebige, hochwertige Materialien von etablierten Großhändlern'
+      description: 'Gründliche Reinigung mit professionellen Methoden und Geräten'
     },
     {
       icon: Clock,
-      title: 'Schnelle Umsetzung',
-      description: 'Umbau in 3-5 Tagen – ohne lange Wartezeiten'
+      title: 'Flexible Zeiten',
+      description: 'Reinigung nach Ihrem Zeitplan – auch abends und am Wochenende'
     },
     {
       icon: Heart,
-      title: 'Maßgeschneiderte Lösungen',
-      description: 'Individuell geplant nach Ihren Wünschen und Bedürfnissen'
+      title: 'Individuelle Konzepte',
+      description: 'Maßgeschneiderte Reinigungspläne für Ihre speziellen Anforderungen'
     },
     {
       icon: TrendingUp,
-      title: 'Alles aus einer Hand',
-      description: 'Vom Erstgespräch bis zur fertigen Wohlfühloase – schlüsselfertig'
+      title: 'Faire Preise',
+      description: 'Transparente Kostenstruktur ohne versteckte Gebühren'
     }
   ];
 
@@ -48,16 +48,16 @@ const WhyUs = () => {
           className="text-center mb-16"
         >
           <div className="inline-block bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-6">
-            <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Warum TOR GmbH?</span>
+            <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Warum Prima?</span>
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
             Ihr verlässlicher Partner
             <br />
-            <span className="text-tor-teal font-normal italic">für Badsanierung</span>
+            <span className="text-tor-teal font-normal italic">für Reinigung</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed">
-            Mit über 25 Jahren Erfahrung, zertifizierter Qualität und einem engagierten Team
-            setzen wir Maßstäbe in der barrierefreien Badsanierung
+            Mit professionellem Service, höchster Qualität und einem engagierten Team
+            setzen wir Maßstäbe in der Reinigungsbranche
           </p>
         </motion.div>
 
@@ -97,8 +97,8 @@ const WhyUs = () => {
                 Überzeugen Sie sich selbst von unserer Qualität
               </h3>
               <p className="text-base text-gray-600 font-light leading-relaxed mb-6">
-                Vereinbaren Sie jetzt Ihren kostenlosen Vermessungstermin.
-                Wir beraten Sie gerne persönlich und finden die optimale Lösung für Ihr barrierefreies Bad.
+                Kontaktieren Sie uns für ein kostenloses und unverbindliches Angebot.
+                Wir beraten Sie gerne persönlich und erstellen ein maßgeschneidertes Reinigungskonzept für Sie.
               </p>
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.02 }}
