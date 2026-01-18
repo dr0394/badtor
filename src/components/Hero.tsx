@@ -21,7 +21,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-white via-tor-beige/60 to-tor-beige/30 z-10" />
         <img
-          src="https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="https://i.imgur.com/H72xD3O.png"
           alt="Professionelle Reinigung"
           className="w-full h-full object-cover opacity-40"
         />
