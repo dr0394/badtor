@@ -17,13 +17,14 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
   ];
 
   return (
-    <section id="hero" className="relative min-h-screen pt-20 overflow-hidden bg-white">
+    <section id="hero" className="relative min-h-screen pt-20 overflow-hidden bg-craft-navy">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-tor-beige/60 to-tor-beige/30 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-craft-navy via-craft-navy-light/95 to-craft-navy/90 z-10" />
+        <div className="absolute inset-0 texture-grid opacity-30 z-20" />
         <img
           src="https://i.imgur.com/H72xD3O.png"
           alt="Professionelle Reinigung"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
 
@@ -40,9 +41,9 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               transition={{ delay: 0.3 }}
               className="inline-block"
             >
-              <div className="bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-8">
-                <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">
-                  Ihr Partner in Velbert & Umgebung
+              <div className="bg-craft-rust/20 border-2 border-craft-rust px-6 py-3 rounded mb-8">
+                <span className="text-craft-rust font-semibold text-xs tracking-[0.25em] uppercase">
+                  Velbert & Umgebung
                 </span>
               </div>
             </motion.div>
@@ -51,20 +52,20 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight mb-8 leading-[1.15] text-gray-900"
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-[1.1] text-white font-roboto"
             >
-              Professionelle Reinigung –
+              Sauberkeit mit
               <br />
-              <span className="text-tor-teal font-normal italic">Für Ihr Unternehmen</span>
+              <span className="text-craft-rust">Handschlag-Qualität</span>
             </motion.h1>
 
             <motion.p
               initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-lg text-gray-600 mb-6 lg:mb-10 font-light leading-relaxed max-w-xl"
+              className="text-lg text-craft-sand mb-6 lg:mb-10 leading-relaxed max-w-xl font-light"
             >
-              Ihr verlässlicher Partner für Büroreinigung, Praxisreinigung und Hotelreinigung in Velbert. Makellose Sauberkeit für Ihr professionelles Umfeld – zuverlässig, gründlich und termingerecht.
+              Professionelle Reinigung für Büros, Praxen und Hotels. Ehrlich. Gründlich. Verlässlich. Wie ein guter Handwerker – nur für Sauberkeit.
             </motion.p>
 
             {/* Mobile Image - Between subtitle and benefits */}
@@ -72,17 +73,17 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55 }}
-              className="lg:hidden relative rounded-2xl overflow-hidden border border-tor-teal/30 shadow-xl mb-8"
+              className="lg:hidden relative rounded overflow-hidden border-4 border-craft-rust shadow-2xl mb-8"
             >
               <img
                 src="https://i.imgur.com/H72xD3O.png"
                 alt="Professionelle Reinigung"
                 className="w-full h-[300px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tor-teal/90 to-transparent p-6">
-                <div className="text-xl font-light tracking-wide mb-1 text-white">Ihr B2B-Partner</div>
-                <div className="text-white/90 font-light text-sm">
-                  Professionelle Reinigung für Büros, Praxen & Hotels
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-craft-charcoal/95 to-transparent p-6">
+                <div className="text-xl font-bold tracking-wide mb-1 text-white font-roboto">B2B-Reinigung</div>
+                <div className="text-craft-sand font-light text-sm">
+                  Zuverlässig wie das Handwerk
                 </div>
               </div>
             </motion.div>
@@ -96,12 +97,12 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
-                  whileHover={isMobile ? {} : { scale: 1.02, y: -2 }}
-                  className="bg-white/90 backdrop-blur-sm border border-tor-teal/20 p-5 rounded-lg"
+                  whileHover={isMobile ? {} : { scale: 1.05, y: -4 }}
+                  className="bg-craft-sand-light/95 backdrop-blur-sm border-l-4 border-craft-rust p-5 rounded shadow-lg"
                 >
-                  <feature.icon className="w-7 h-7 text-tor-teal mb-3 stroke-[1.5]" />
-                  <div className="font-normal text-sm text-gray-900 mb-1">{feature.title}</div>
-                  <div className="text-xs text-gray-500 font-light">{feature.subtitle}</div>
+                  <feature.icon className="w-8 h-8 text-craft-rust mb-3 stroke-[2]" />
+                  <div className="font-bold text-sm text-craft-charcoal mb-1">{feature.title}</div>
+                  <div className="text-xs text-craft-gray font-medium">{feature.subtitle}</div>
                 </motion.div>
               ))}
             </motion.div>
@@ -114,28 +115,28 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             >
               <div className="flex flex-wrap gap-4">
                 <motion.button
-                  whileHover={isMobile ? {} : { scale: 1.02 }}
-                  whileTap={isMobile ? {} : { scale: 0.98 }}
+                  whileHover={isMobile ? {} : { scale: 1.05 }}
+                  whileTap={isMobile ? {} : { scale: 0.95 }}
                   onClick={onOpenQuoteModal}
-                  className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all"
+                  className="bg-craft-rust hover:bg-craft-rust-light text-white px-10 py-4 rounded font-bold text-base tracking-wide transition-all shadow-lg border-b-4 border-craft-rust-dark hover:border-craft-rust"
                 >
                   Kostenlos anfragen
                 </motion.button>
                 <motion.button
-                  whileHover={isMobile ? {} : { scale: 1.02 }}
-                  whileTap={isMobile ? {} : { scale: 0.98 }}
+                  whileHover={isMobile ? {} : { scale: 1.05 }}
+                  whileTap={isMobile ? {} : { scale: 0.95 }}
                   onClick={() => {
                     const element = document.getElementById('services');
                     element?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="bg-transparent hover:bg-gray-50 text-gray-700 px-10 py-4 rounded-md font-light text-sm tracking-wide transition-all border border-gray-300"
+                  className="bg-craft-sand-light hover:bg-white text-craft-charcoal px-10 py-4 rounded font-semibold text-base tracking-wide transition-all border-2 border-craft-sand shadow-lg"
                 >
                   Unsere Leistungen
                 </motion.button>
               </div>
 
-              <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg p-5 inline-flex items-center gap-4">
-                <div className="w-11 h-11 bg-white rounded-lg flex items-center justify-center flex-shrink-0 border border-gray-100">
+              <div className="bg-craft-sand-light/95 backdrop-blur-sm border-2 border-craft-copper rounded p-5 inline-flex items-center gap-4 shadow-lg">
+                <div className="w-11 h-11 bg-white rounded flex items-center justify-center flex-shrink-0 border-2 border-craft-copper">
                   <svg className="w-7 h-7" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
                     <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
@@ -147,11 +148,11 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
                 <div>
                   <div className="flex gap-1 mb-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-yellow-500 text-yellow-500" />
+                      <Star key={i} className="w-4 h-4 fill-craft-copper text-craft-copper" />
                     ))}
                   </div>
-                  <div className="text-sm font-normal text-gray-900">4,9 von 5,0 Sternen</div>
-                  <div className="text-xs text-gray-500 font-light">Basierend auf Google Bewertungen</div>
+                  <div className="text-sm font-bold text-craft-charcoal">4,9 von 5,0 Sternen</div>
+                  <div className="text-xs text-craft-gray font-semibold">Google Bewertungen</div>
                 </div>
               </div>
             </motion.div>
@@ -163,20 +164,20 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="hidden lg:block relative"
           >
-            <div className="absolute -top-4 -right-4 bg-tor-teal px-6 py-3 rounded-lg shadow-xl z-10">
-              <div className="text-[10px] font-light tracking-[0.15em] text-white/90 uppercase">Einsatzgebiet</div>
-              <div className="text-lg font-normal text-white">Velbert & Umgebung</div>
+            <div className="absolute -top-4 -right-4 bg-craft-rust px-6 py-4 rounded shadow-2xl z-10 border-b-4 border-craft-rust-dark">
+              <div className="text-[10px] font-bold tracking-[0.2em] text-white uppercase">Einsatzgebiet</div>
+              <div className="text-lg font-bold text-white font-roboto">Velbert & Umgebung</div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden border border-tor-teal/30 shadow-xl">
+            <div className="relative rounded overflow-hidden border-4 border-craft-rust shadow-2xl">
               <img
                 src="https://i.imgur.com/H72xD3O.png"
                 alt="Professionelle Reinigung"
                 className="w-full h-[600px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tor-teal/80 to-transparent p-8">
-                <div className="text-2xl font-light tracking-wide mb-2 text-white">Ihr B2B-Partner</div>
-                <div className="text-white/90 font-light text-sm">
-                  Professionelle Reinigung für Büros, Praxen & Hotels
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-craft-charcoal/95 to-transparent p-8 border-t-4 border-craft-rust">
+                <div className="text-2xl font-bold tracking-wide mb-2 text-white font-roboto">B2B-Reinigung</div>
+                <div className="text-craft-sand font-medium text-base">
+                  Zuverlässig wie das Handwerk
                 </div>
               </div>
             </div>
@@ -189,7 +190,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
           transition={{ delay: 1.2 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"
         >
-          <ChevronDown className="w-8 h-8 text-tor-teal" />
+          <ChevronDown className="w-10 h-10 text-craft-rust stroke-[3]" />
         </motion.div>
       </div>
     </section>

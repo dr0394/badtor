@@ -35,24 +35,25 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="py-24 bg-craft-sand-light relative overflow-hidden">
+      <div className="absolute inset-0 texture-diagonal opacity-40"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-block bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-6">
-            <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Unsere Arbeit</span>
+          <div className="inline-block bg-craft-olive/20 border-2 border-craft-olive px-6 py-3 rounded mb-6">
+            <span className="text-craft-olive font-bold text-xs tracking-[0.25em] uppercase">Unsere Arbeit</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-craft-charcoal font-roboto">
             Machen Sie sich ein Bild
             <br />
-            <span className="text-tor-teal font-normal italic">von unserer Arbeit</span>
+            <span className="text-craft-olive">von unserer Arbeit</span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-            Sauberkeit, auf die Sie sich verlassen können – ein Einblick in unsere professionellen Reinigungsergebnisse
+          <p className="text-base sm:text-lg text-craft-gray max-w-3xl mx-auto font-medium leading-relaxed">
+            Handwerkliche Präzision trifft auf professionelle Reinigung – ein Einblick in unsere Projekte
           </p>
         </motion.div>
 
@@ -64,9 +65,9 @@ const Gallery = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              whileHover={isMobile ? {} : { y: -10 }}
+              whileHover={isMobile ? {} : { y: -8, scale: 1.02 }}
               onClick={() => setSelectedImage(project.src)}
-              className="group relative overflow-hidden rounded-xl cursor-pointer bg-gray-50 border border-gray-200 hover:border-tor-teal hover:shadow-xl transition-all"
+              className="group relative overflow-hidden rounded cursor-pointer bg-white border-4 border-craft-olive hover:border-craft-rust hover:shadow-2xl transition-all"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -75,9 +76,9 @@ const Gallery = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform">
-                <h3 className="font-normal text-base text-white">{project.title}</h3>
+              <div className="absolute inset-0 bg-gradient-to-t from-craft-charcoal/90 via-craft-charcoal/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform border-t-4 border-craft-rust">
+                <h3 className="font-bold text-base text-white font-roboto">{project.title}</h3>
               </div>
             </motion.div>
           ))}
@@ -91,16 +92,16 @@ const Gallery = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-craft-navy/95 flex items-center justify-center p-4"
           >
             <motion.button
               initial={isMobile ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 w-12 h-12 bg-tor-teal rounded-full flex items-center justify-center hover:bg-tor-teal-light transition-colors"
+              className="absolute top-4 right-4 w-14 h-14 bg-craft-rust rounded flex items-center justify-center hover:bg-craft-rust-light transition-colors border-b-4 border-craft-rust-dark shadow-xl"
             >
-              <X className="w-6 h-6" />
+              <X className="w-7 h-7 text-white stroke-[3]" />
             </motion.button>
             <motion.img
               initial={isMobile ? { scale: 1 } : { scale: 0.8 }}
@@ -108,7 +109,7 @@ const Gallery = () => {
               exit={{ scale: 0.8 }}
               src={selectedImage}
               alt="Reinigung Detail"
-              className="max-w-full max-h-full rounded-xl"
+              className="max-w-full max-h-full rounded border-4 border-craft-rust shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
           </motion.div>

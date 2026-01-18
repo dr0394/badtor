@@ -41,7 +41,7 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-sm' : 'bg-white/80 backdrop-blur-sm'
+        isScrolled ? 'bg-craft-sand-light/98 backdrop-blur-lg border-b-4 border-craft-rust shadow-lg' : 'bg-craft-sand-light/95 backdrop-blur-sm border-b-2 border-craft-sand'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,12 +49,12 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
           <motion.div
             className="cursor-pointer"
             onClick={() => scrollToSection('hero')}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.08 }}
           >
             <img
               src="/primalogo.png"
               alt="Prima Reinigungsservice"
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </motion.div>
 
@@ -63,7 +63,7 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-normal tracking-wide text-gray-700 hover:text-tor-teal transition-colors"
+                className="text-sm font-semibold tracking-wide text-craft-charcoal hover:text-craft-rust transition-colors border-b-2 border-transparent hover:border-craft-rust pb-1"
               >
                 {item.label}
               </button>
@@ -73,24 +73,24 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:+4920514360763"
-              className="text-gray-700 hover:text-tor-teal transition-colors flex items-center gap-2"
+              className="text-craft-charcoal hover:text-craft-rust transition-colors flex items-center gap-2 font-medium"
             >
-              <Phone className="w-4 h-4 stroke-[1.5]" />
-              <span className="text-sm">02051 / 436 0 763</span>
+              <Phone className="w-5 h-5 stroke-[2]" />
+              <span className="text-sm font-bold">02051 / 436 0 763</span>
             </a>
             <button
               onClick={onOpenQuoteModal}
-              className="bg-tor-teal hover:bg-tor-teal-light text-white px-6 py-2.5 rounded-md font-normal text-sm tracking-wide transition-all"
+              className="bg-craft-rust hover:bg-craft-rust-light text-white px-6 py-3 rounded font-bold text-sm tracking-wide transition-all shadow-lg border-b-4 border-craft-rust-dark hover:border-craft-rust"
             >
               Angebot anfordern
             </button>
           </div>
 
           <button
-            className="lg:hidden text-gray-900"
+            className="lg:hidden text-craft-charcoal"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-7 h-7 stroke-[2.5]" /> : <Menu className="w-7 h-7 stroke-[2.5]" />}
           </button>
         </div>
       </div>
@@ -99,23 +99,23 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="lg:hidden bg-white border-t border-gray-200"
+          className="lg:hidden bg-craft-beige border-t-4 border-craft-rust shadow-xl"
         >
           <div className="px-4 py-6 space-y-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left text-base font-normal tracking-wide text-gray-900 hover:text-tor-teal transition-colors py-2"
+                className="block w-full text-left text-base font-bold tracking-wide text-craft-charcoal hover:text-craft-rust transition-colors py-3 border-l-4 border-transparent hover:border-craft-rust pl-4"
               >
                 {item.label}
               </button>
             ))}
             <a
               href="tel:+4920514360763"
-              className="flex items-center gap-2 text-tor-teal text-base font-normal py-2"
+              className="flex items-center gap-3 text-craft-rust text-base font-bold py-3 border-l-4 border-craft-rust pl-4"
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-5 h-5 stroke-[2]" />
               02051 / 436 0 763
             </a>
             <button
@@ -123,7 +123,7 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
                 setIsMobileMenuOpen(false);
                 onOpenQuoteModal();
               }}
-              className="w-full bg-tor-teal hover:bg-tor-teal-light text-white px-6 py-3 rounded-md font-normal text-sm tracking-wide transition-all"
+              className="w-full bg-craft-rust hover:bg-craft-rust-light text-white px-6 py-4 rounded font-bold text-base tracking-wide transition-all shadow-lg border-b-4 border-craft-rust-dark"
             >
               Angebot anfordern
             </button>
