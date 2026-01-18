@@ -10,10 +10,10 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
   const isMobile = useReducedMotion();
 
   const features = [
-    { icon: Sparkles, title: 'Professionelle Reinigung', subtitle: 'Für alle Bereiche' },
-    { icon: Shield, title: 'Zuverlässig', subtitle: 'Erfahrung & Qualität' },
+    { icon: Sparkles, title: 'Gewerblich & Privat', subtitle: 'Alle Bereiche' },
+    { icon: Shield, title: 'Zertifiziert', subtitle: 'Höchste Standards' },
     { icon: Clock, title: 'Flexibel', subtitle: 'Nach Ihrem Zeitplan' },
-    { icon: Award, title: 'Maßgeschneidert', subtitle: 'Individuelle Lösungen' },
+    { icon: Award, title: 'B2B-Fokus', subtitle: 'Für Unternehmen' },
   ];
 
   return (
@@ -55,7 +55,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             >
               Professionelle Reinigung –
               <br />
-              <span className="text-tor-teal font-normal italic">Für Ihr sauberes Zuhause</span>
+              <span className="text-tor-teal font-normal italic">Für Ihr Unternehmen</span>
             </motion.h1>
 
             <motion.p
@@ -64,7 +64,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               transition={{ delay: 0.5 }}
               className="text-lg text-gray-600 mb-6 lg:mb-10 font-light leading-relaxed max-w-xl"
             >
-              Von Glas- und Fensterreinigung bis zur Büroreinigung – wir sorgen für makellose Sauberkeit in allen Bereichen. Zuverlässig, gründlich und termingerecht.
+              Ihr verlässlicher Partner für Büroreinigung, Praxisreinigung und Hotelreinigung in Velbert. Makellose Sauberkeit für Ihr professionelles Umfeld – zuverlässig, gründlich und termingerecht.
             </motion.p>
 
             {/* Mobile Image - Between subtitle and benefits */}
@@ -80,9 +80,9 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
                 className="w-full h-[300px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tor-teal/90 to-transparent p-6">
-                <div className="text-xl font-light tracking-wide mb-1 text-white">Qualität & Zuverlässigkeit</div>
+                <div className="text-xl font-light tracking-wide mb-1 text-white">Ihr B2B-Partner</div>
                 <div className="text-white/90 font-light text-sm">
-                  Professionelle Reinigung für Büro, Praxis, Hotel und Privat
+                  Professionelle Reinigung für Büros, Praxen & Hotels
                 </div>
               </div>
             </motion.div>
@@ -174,9 +174,9 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tor-teal/80 to-transparent p-8">
-                <div className="text-2xl font-light tracking-wide mb-2 text-white">Qualität & Zuverlässigkeit</div>
+                <div className="text-2xl font-light tracking-wide mb-2 text-white">Ihr B2B-Partner</div>
                 <div className="text-white/90 font-light text-sm">
-                  Professionelle Reinigung für Büro, Praxis, Hotel und Privat
+                  Professionelle Reinigung für Büros, Praxen & Hotels
                 </div>
               </div>
             </div>

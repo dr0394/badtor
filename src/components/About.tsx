@@ -10,10 +10,10 @@ const About = ({ onOpenQuoteModal }: AboutProps) => {
   const isMobile = useReducedMotion();
 
   const values = [
-    { icon: Heart, title: 'Individuelle Betreuung', description: 'Persönlich und auf Ihre Bedürfnisse abgestimmt' },
-    { icon: CheckCircle2, title: 'Höchste Qualität', description: 'Gründliche Reinigung mit professionellen Methoden' },
-    { icon: Award, title: 'Faire Preise', description: 'Transparente Angebote ohne versteckte Kosten' },
-    { icon: Users, title: 'Erfahrenes Team', description: 'Geschulte Mitarbeiter mit langjähriger Erfahrung' },
+    { icon: Heart, title: 'B2B-Spezialist', description: 'Auf gewerbliche Reinigung fokussiert' },
+    { icon: CheckCircle2, title: 'Höchste Standards', description: 'Professionelle Reinigung nach Industriestandards' },
+    { icon: Award, title: 'Langfristige Verträge', description: 'Planbare Kosten für Ihr Unternehmen' },
+    { icon: Users, title: 'Zertifiziertes Personal', description: 'Geschulte Fachkräfte für Ihren Betrieb' },
   ];
 
   return (
@@ -48,15 +48,15 @@ const About = ({ onOpenQuoteModal }: AboutProps) => {
               <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Über Prima Reinigungsservice</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight mb-6">
-              Sauberkeit, Zuverlässigkeit und
+              Ihr B2B-Partner für
               <br />
-              <span className="text-tor-teal font-normal italic">Perfektion</span>
+              <span className="text-tor-teal font-normal italic">gewerbliche Reinigung</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed font-light">
-              Prima Reinigungsservice ist Ihr zuverlässiger Partner für professionelle Reinigungsdienstleistungen in Velbert und Umgebung. Wir bieten maßgeschneiderte Reinigungslösungen für Privat- und Geschäftskunden.
+              Prima Reinigungsservice ist Ihr spezialisierter Partner für professionelle Unternehmensreinigung in Velbert und Umgebung. Wir bieten maßgeschneiderte Reinigungslösungen für Büros, Praxen, Kanzleien, Hotels und Gewerbeflächen.
             </p>
             <p className="text-sm sm:text-base text-gray-500 mb-6 sm:mb-8 leading-relaxed font-light">
-              Von der Glas- und Fensterreinigung über Büroreinigung bis hin zur Hotelreinigung – wir sorgen für makellosen Glanz und höchste Hygienestandards. Mit geschultem Personal und modernen Reinigungsmethoden garantieren wir Ihnen erstklassige Ergebnisse.
+              Als verlässlicher B2B-Partner verstehen wir die hohen Anforderungen an Sauberkeit und Hygiene in Ihrem Unternehmen. Mit geschultem Fachpersonal, modernen Reinigungsmethoden und flexiblen Einsatzzeiten sorgen wir für ein gepflegtes, professionelles Arbeitsumfeld – damit Sie sich auf Ihr Kerngeschäft konzentrieren können.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">

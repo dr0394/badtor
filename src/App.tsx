@@ -5,6 +5,7 @@ import About from './components/About';
 import WhyUs from './components/WhyUs';
 import Services from './components/Services';
 import ParallaxSection from './components/ParallaxSection';
+import HomeCleaning from './components/HomeCleaning';
 import BeforeAfter from './components/BeforeAfter';
 import Features from './components/Features';
 import GoogleReviews from './components/GoogleReviews';
@@ -37,10 +38,11 @@ function App() {
       <Header onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <Hero onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <Services onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
+      <About onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <ParallaxSection onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
+      <HomeCleaning onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <BeforeAfter />
       <Features onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
-      <About onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <WhyUs onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <GoogleReviews />
       <Contact onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
