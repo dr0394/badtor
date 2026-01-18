@@ -26,14 +26,14 @@ const ParallaxSection = ({ onOpenQuoteModal }: ParallaxSectionProps) => {
   ];
 
   return (
-    <section ref={ref} className="relative h-[600px] overflow-hidden">
+    <section ref={ref} className="relative h-[600px] overflow-hidden"> 
       <motion.div
         className="absolute inset-0"
         style={{ y }}
       >
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=300"
+          src="https://images.pexels.com/photos/4239013/pexels-photo-4239013.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Professionelle Reinigung"
           className="w-full h-full object-cover"
         />
