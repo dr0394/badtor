@@ -18,7 +18,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Glas- & Fensterreinigung',
       shortDesc: 'Kristallklare Fenster für mehr Durchblick',
       fullDesc: 'Professionelle Glas- und Fensterreinigung für Privat- und Geschäftskunden. Streifenfreie Ergebnisse und strahlende Sauberkeit für alle Glasflächen.',
-      image: 'https://images.pexels.com/photos/4239119/pexels-photo-4239119.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/18885426/pexels-photo-18885426.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Fensterreinigung buchen',
       details: [
         'Innen- und Außenreinigung aller Fenster',
@@ -43,7 +43,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Büro & Unterhaltsreinigung',
       shortDesc: 'Saubere Arbeitsumgebung für produktives Arbeiten',
       fullDesc: 'Regelmäßige und zuverlässige Büroreinigung für ein gepflegtes Arbeitsumfeld. Wir sorgen für Sauberkeit und Hygiene in Ihren Geschäftsräumen.',
-      image: 'https://images.pexels.com/photos/4239039/pexels-photo-4239039.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Büroreinigung anfragen',
       details: [
         'Tägliche oder wöchentliche Reinigung',
@@ -68,7 +68,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Praxis- & Kanzleienreinigung',
       shortDesc: 'Hygiene und Sauberkeit für höchste Ansprüche',
       fullDesc: 'Spezialisierte Reinigung für Arztpraxen, Kanzleien und professionelle Büros. Höchste Hygienestandards und diskrete Arbeitsweise.',
-      image: 'https://images.pexels.com/photos/4107283/pexels-photo-4107283.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/8413204/pexels-photo-8413204.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Praxisreinigung planen',
       details: [
         'Desinfektion nach medizinischen Standards',
@@ -93,7 +93,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Treppenhausreinigung',
       shortDesc: 'Saubere und gepflegte Eingangsbereiche',
       fullDesc: 'Regelmäßige Treppenhausreinigung für Wohngebäude und Mehrfamilienhäuser. Für einen einladenden ersten Eindruck.',
-      image: 'https://images.pexels.com/photos/1904769/pexels-photo-1904769.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/5301094/pexels-photo-5301094.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Treppenhausreinigung buchen',
       details: [
         'Treppenstufen und Handläufe',
@@ -118,7 +118,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Bau- & Grundreinigung',
       shortDesc: 'Nach der Baustelle kommt die Sauberkeit',
       fullDesc: 'Professionelle Endreinigung nach Bau- und Renovierungsarbeiten. Wir entfernen Baustaub und -schmutz gründlich und hinterlassen bezugsfertige Räume.',
-      image: 'https://images.pexels.com/photos/5691607/pexels-photo-5691607.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Baureinigung anfragen',
       details: [
         'Grobe und feine Bauendreinigung',
@@ -143,7 +143,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Hotel- & Ferienwohnung',
       shortDesc: 'Perfekte Sauberkeit für Ihre Gäste',
       fullDesc: 'Spezialisierte Reinigung für Hotels, Pensionen und Ferienwohnungen. Schneller Wechselservice und höchste Qualitätsstandards für zufriedene Gäste.',
-      image: 'https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3769710/pexels-photo-3769710.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Hotelreinigung besprechen',
       details: [
         'Zimmerreinigung zwischen Gästen',
