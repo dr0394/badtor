@@ -169,7 +169,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             </div>
             <div className="relative rounded-2xl overflow-hidden border border-tor-teal/30 shadow-xl">
               <img
-                src="https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://i.imgur.com/H72xD3O.png"
                 alt="Professionelle Reinigung"
                 className="w-full h-[600px] object-cover"
               />
