@@ -32,12 +32,12 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
   });
 
   const projectTypes = [
-    { icon: Home, label: 'Barrierefreie Badsanierung', value: 'barrierefrei' },
-    { icon: Building2, label: 'Wanne-zu-Dusche-Umbau', value: 'wanne-dusche' },
-    { icon: Paintbrush, label: 'Komplette Badsanierung', value: 'komplett' },
-    { icon: Leaf, label: 'Teilsanierung', value: 'teil' },
-    { icon: LayoutGrid, label: 'Modernisierung', value: 'modern' },
-    { icon: Wallpaper, label: 'Notfall-Sanierung', value: 'notfall' },
+    { icon: Home, label: 'Glas- & Fensterreinigung', value: 'fenster' },
+    { icon: Building2, label: 'Büro & Unterhaltsreinigung', value: 'buero' },
+    { icon: Paintbrush, label: 'Praxis- & Kanzleienreinigung', value: 'praxis' },
+    { icon: Leaf, label: 'Treppenhausreinigung', value: 'treppenhaus' },
+    { icon: LayoutGrid, label: 'Bau- & Grundreinigung', value: 'bau' },
+    { icon: Wallpaper, label: 'Hotel- & Ferienwohnung', value: 'hotel' },
   ];
 
   const timeframes = [
@@ -60,8 +60,8 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
     const selectedProject = projectTypes.find(p => p.value === formData.projectType);
     const selectedTimeframe = timeframes.find(t => t.value === formData.timeframe);
 
-    const subject = `Anfrage: ${selectedProject?.label || 'Projekt'}`;
-    const body = `Hallo TOR GmbH Team,
+    const subject = `Anfrage: ${selectedProject?.label || 'Reinigung'}`;
+    const body = `Hallo Prima Reinigungsservice Team,
 
 ich interessiere mich für folgende Dienstleistung:
 
@@ -77,12 +77,12 @@ Name: ${formData.firstName} ${formData.lastName}
 E-Mail: ${formData.email}
 Telefon: ${formData.phone}
 
-Ich freue mich auf Ihre Rückmeldung und einen kostenlosen Vermessungstermin.
+Ich freue mich auf Ihre Rückmeldung und ein unverbindliches Angebot.
 
 Mit freundlichen Grüßen
 ${formData.firstName} ${formData.lastName}`;
 
-    const mailtoLink = `mailto:bau@tor-bad.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:Info.prima.rs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
 
     handleClose();
@@ -161,9 +161,9 @@ ${formData.firstName} ${formData.lastName}`;
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h3 className="text-xl font-normal mb-2">Welche Badsanierung benötigen Sie?</h3>
+                      <h3 className="text-xl font-normal mb-2">Welche Reinigung benötigen Sie?</h3>
                       <p className="text-sm text-gray-500 font-light mb-6">
-                        Wählen Sie die Sanierungsart aus, die am besten zu Ihrem Vorhaben passt.
+                        Wählen Sie die Reinigungsart aus, die am besten zu Ihrem Vorhaben passt.
                       </p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {projectTypes.map((type) => (

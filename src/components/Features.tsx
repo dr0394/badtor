@@ -12,54 +12,39 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
   const steps = [
     {
       icon: Phone,
-      title: 'Beratung & Bedarfsermittlung',
-      description: 'Persönliches Gespräch zur Analyse Ihrer Anforderungen und Wünsche für Ihr barrierefreies Bad'
+      title: 'Anfrage stellen',
+      description: 'Kontaktieren Sie uns telefonisch, per E-Mail oder über unser Kontaktformular'
     },
     {
       icon: Ruler,
-      title: 'Vermessungstermin vor Ort',
-      description: 'Unser Team misst Ihr Badezimmer aus und bespricht alle Details mit Ihnen'
+      title: 'Besichtigung vor Ort',
+      description: 'Wir vereinbaren einen Termin und besichtigen die zu reinigenden Räumlichkeiten'
     },
     {
       icon: PenTool,
-      title: 'Individuelle Planung',
-      description: 'Anhand der Messdaten erstellen unsere Architekten ein maßgeschneidertes Konzept'
+      title: 'Individuelles Angebot',
+      description: 'Sie erhalten ein maßgeschneidertes Angebot basierend auf Ihren Anforderungen'
     },
     {
       icon: CheckCircle2,
-      title: 'Materialauswahl',
-      description: 'Nur hochwertige, langlebige Materialien, die strenge Qualitätsstandards erfüllen'
+      title: 'Terminvereinbarung',
+      description: 'Wir planen die Reinigung flexibel nach Ihrem Zeitplan'
     },
     {
       icon: Hammer,
-      title: 'Umbau & Installation',
-      description: 'Professionelle Umsetzung in ca. 3–5 Arbeitstagen je nach Aufwand'
+      title: 'Professionelle Durchführung',
+      description: 'Unser geschultes Team führt die Reinigung gründlich und zuverlässig durch'
     },
     {
       icon: Key,
-      title: 'Übergabe & Einweisung',
-      description: 'Das fertiggestellte Bad wird übergeben, Handhabung und Pflege werden erläutert'
+      title: 'Qualitätskontrolle',
+      description: 'Wir überprüfen das Ergebnis und stellen sicher, dass Sie zufrieden sind'
     },
     {
       icon: HeadphonesIcon,
-      title: 'Nachbetreuung',
-      description: 'Unser Team bleibt ansprechbar für alle Servicefragen auch nach der Fertigstellung'
+      title: 'Regelmäßiger Service',
+      description: 'Auf Wunsch bieten wir Ihnen regelmäßige Reinigungsverträge an'
     }
-  ];
-
-  const features = [
-    'Beratung & Vermessung kostenfrei',
-    'Individuelle Badplanung',
-    'Hochwertige Materialien',
-    'Barrierefreie Lösungen',
-    'Schnelle Umsetzung (3-5 Tage)',
-    'Alles aus einer Hand',
-    'Schlüsselfertige Übergabe',
-    'Qualitätsgarantie',
-    'Erfahrenes Team seit 1999',
-    'Kompetente Architekten',
-    'Faire & transparente Preise',
-    'Zufriedenheitsgarantie'
   ];
 
   return (
@@ -75,13 +60,13 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
             <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">So funktioniert's</span>
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
-            Ihr Weg zum
+            Ihr Weg zur
             <br />
-            <span className="text-tor-teal font-normal italic">barrierefreien Bad</span>
+            <span className="text-tor-teal font-normal italic">perfekten Sauberkeit</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed">
-            Von der ersten Beratung bis zur Nachbetreuung –
-            wir begleiten Sie professionell durch den gesamten Badsanierungsprozess
+            Von der ersten Anfrage bis zum regelmäßigen Service –
+            wir begleiten Sie professionell durch den gesamten Reinigungsprozess
           </p>
         </motion.div>
 
@@ -117,41 +102,17 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
           initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 sm:p-12"
+          className="text-center"
         >
-          <div className="text-center mb-10">
-            <h3 className="text-2xl sm:text-3xl font-light tracking-tight mb-4 text-gray-900">
-              Unsere Leistungsmerkmale
-            </h3>
-            <p className="text-base text-gray-600 font-light leading-relaxed max-w-2xl mx-auto mb-6">
-              Was Sie bei TOR GmbH erwarten können
-            </p>
-            <motion.button
-              whileHover={isMobile ? {} : { scale: 1.02 }}
-              whileTap={isMobile ? {} : { scale: 0.98 }}
-              onClick={onOpenQuoteModal}
-              className="bg-tor-teal hover:bg-tor-teal-light text-white px-8 py-3 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
-            >
-              Kostenlos Angebot anfragen
-              <ArrowRight className="w-4 h-4" />
-            </motion.button>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className="flex items-center gap-3 bg-white border border-gray-200 rounded-lg p-4"
-              >
-                <CheckCircle2 className="w-5 h-5 text-tor-teal flex-shrink-0 stroke-[1.5]" />
-                <span className="text-sm text-gray-700 font-light">{feature}</span>
-              </motion.div>
-            ))}
-          </div>
+          <motion.button
+            whileHover={isMobile ? {} : { scale: 1.02 }}
+            whileTap={isMobile ? {} : { scale: 0.98 }}
+            onClick={onOpenQuoteModal}
+            className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2 shadow-lg"
+          >
+            Jetzt Angebot anfragen
+            <ArrowRight className="w-4 h-4" />
+          </motion.button>
         </motion.div>
       </div>
     </section>

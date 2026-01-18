@@ -8,22 +8,22 @@ const BeforeAfter = () => {
 
   const projects = [
     {
-      title: 'Barrierefreie Badsanierung',
-      location: 'Freiburg',
-      before: 'https://tor-bad.de/wp-content/uploads/2025/07/Bad_1-vorher-vorher-2-1396x2048.jpg',
-      after: 'https://tor-bad.de/wp-content/uploads/2025/07/photo_2025-03-21_10-36-02-3.jpg',
+      title: 'Büroreinigung',
+      location: 'Velbert',
+      before: 'https://images.pexels.com/photos/6197118/pexels-photo-6197118.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      after: 'https://images.pexels.com/photos/4239039/pexels-photo-4239039.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
-      title: 'Wanne-zu-Dusche-Umbau',
-      location: 'Stuttgart',
-      before: 'https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      after: 'https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Fensterreinigung',
+      location: 'Velbert',
+      before: 'https://images.pexels.com/photos/6197111/pexels-photo-6197111.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      after: 'https://images.pexels.com/photos/4239119/pexels-photo-4239119.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
-      title: 'Komplette Badmodernisierung',
-      location: 'Freiburg',
-      before: 'https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      after: 'https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Treppenhausreinigung',
+      location: 'Velbert',
+      before: 'https://images.pexels.com/photos/6195276/pexels-photo-6195276.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      after: 'https://images.pexels.com/photos/1904769/pexels-photo-1904769.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
   ];
 
@@ -67,7 +67,7 @@ const BeforeAfter = () => {
             VORHER / NACHHER
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto">
-            Sehen Sie selbst, wie wir Bäder verwandeln - mit Präzision und Leidenschaft
+            Sehen Sie selbst, wie wir Räume verwandeln - mit Präzision und Leidenschaft
           </p>
         </motion.div>
 
