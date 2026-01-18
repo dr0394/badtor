@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
-import { Shield, Users, Award, Clock, Heart, TrendingUp } from 'lucide-react';
+import { Shield, Users, Award, Clock, Heart, TrendingUp, ArrowRight } from 'lucide-react';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
-const WhyUs = () => {
+interface WhyUsProps {
+  onOpenQuoteModal: () => void;
+}
+
+const WhyUs = ({ onOpenQuoteModal }: WhyUsProps) => {
   const isMobile = useReducedMotion();
 
   const reasons = [
@@ -39,8 +43,17 @@ const WhyUs = () => {
   ];
 
   return (
-    <section id="why-us" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-us" className="relative py-24 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.pexels.com/photos/4239119/pexels-photo-4239119.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Professionelle Reinigung"
+          className="w-full h-full object-cover opacity-5"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,13 +116,11 @@ const WhyUs = () => {
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.02 }}
                 whileTap={isMobile ? {} : { scale: 0.98 }}
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  element?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                onClick={onOpenQuoteModal}
                 className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
               >
-                Jetzt Kontakt aufnehmen
+                Jetzt Angebot anfordern
+                <ArrowRight className="w-4 h-4" />
               </motion.button>
             </div>
           </div>

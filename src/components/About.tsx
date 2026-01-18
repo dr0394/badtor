@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { Heart, CheckCircle2, Award, Users } from 'lucide-react';
+import { Heart, CheckCircle2, Award, Users, ArrowRight } from 'lucide-react';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
-const About = () => {
+interface AboutProps {
+  onOpenQuoteModal: () => void;
+}
+
+const About = ({ onOpenQuoteModal }: AboutProps) => {
   const isMobile = useReducedMotion();
-  const scrollToServices = () => {
-    const element = document.getElementById('services');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   const values = [
     { icon: Heart, title: 'Individuelle Betreuung', description: 'Persönlich und auf Ihre Bedürfnisse abgestimmt' },
@@ -77,14 +77,28 @@ const About = () => {
               ))}
             </div>
 
-            <motion.button
-              whileHover={isMobile ? {} : { scale: 1.02 }}
-              whileTap={isMobile ? {} : { scale: 0.98 }}
-              onClick={scrollToServices}
-              className="bg-tor-teal hover:bg-tor-teal-light text-white px-8 py-3 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
-            >
-              Mehr über uns
-            </motion.button>
+            <div className="flex flex-wrap gap-4">
+              <motion.button
+                whileHover={isMobile ? {} : { scale: 1.02 }}
+                whileTap={isMobile ? {} : { scale: 0.98 }}
+                onClick={onOpenQuoteModal}
+                className="bg-tor-teal hover:bg-tor-teal-light text-white px-8 py-3 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
+              >
+                Kostenloses Angebot
+                <ArrowRight className="w-4 h-4" />
+              </motion.button>
+              <motion.button
+                whileHover={isMobile ? {} : { scale: 1.02 }}
+                whileTap={isMobile ? {} : { scale: 0.98 }}
+                onClick={() => {
+                  const element = document.getElementById('services');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-transparent hover:bg-gray-100 text-gray-700 px-8 py-3 rounded-md font-light text-sm tracking-wide transition-all border border-gray-300 inline-flex items-center gap-2"
+              >
+                Unsere Leistungen
+              </motion.button>
+            </div>
           </motion.div>
         </div>
       </div>

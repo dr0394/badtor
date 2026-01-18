@@ -19,8 +19,13 @@ const Header = ({ onOpenQuoteModal }: HeaderProps) => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    // Scroll to top if clicking on hero/home
+    if (id === 'hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(id);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
     setIsMobileMenuOpen(false);
   };
 

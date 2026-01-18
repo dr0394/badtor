@@ -7,40 +7,40 @@ const GoogleReviews = () => {
 
   const reviews = [
     {
-      author: 'Petra Zimmermann',
+      author: 'Sabine K.',
+      rating: 5,
+      date: 'vor 1 Woche',
+      text: 'Sehr zuverlässig und gründlich! Die Fenster waren noch nie so sauber. Das Team arbeitet schnell und professionell. Absolute Empfehlung!'
+    },
+    {
+      author: 'Michael B.',
       rating: 5,
       date: 'vor 2 Wochen',
-      text: 'Unser barrierefreies Bad wurde in nur 4 Tagen fertiggestellt. Das Team von TOR GmbH war sehr professionell und die Qualität ist hervorragend. Wir können endlich wieder selbstständig duschen!'
+      text: 'Prima Reinigungsservice macht unsere Büroreinigung seit 6 Monaten. Immer pünktlich, freundlich und sehr gründlich. Super Service!'
     },
     {
-      author: 'Klaus Meier',
+      author: 'Andrea L.',
+      rating: 5,
+      date: 'vor 3 Wochen',
+      text: 'Die Grundreinigung nach unserem Umbau war perfekt. Alle Farbreste und Baustaub wurden restlos entfernt. Vielen Dank für die tolle Arbeit!'
+    },
+    {
+      author: 'Frank W.',
       rating: 5,
       date: 'vor 1 Monat',
-      text: 'Die Umwandlung unserer Badewanne in eine ebenerdige Dusche war die beste Entscheidung! Herr Sverdlov hat uns hervorragend beraten. Alles lief reibungslos ab.'
+      text: 'Unser Treppenhaus wird wöchentlich gereinigt und sieht immer makellos aus. Sehr zuverlässiges Team und faire Preise.'
     },
     {
-      author: 'Maria Schneider',
+      author: 'Julia H.',
+      rating: 5,
+      date: 'vor 1 Monat',
+      text: 'Als Praxisbetreiberin bin ich sehr zufrieden mit der hygienischen und diskreten Reinigung. Das Team kennt sich mit den hohen Anforderungen aus.'
+    },
+    {
+      author: 'Thomas G.',
       rating: 5,
       date: 'vor 2 Monaten',
-      text: 'Vom Vermessungstermin bis zur Fertigstellung lief alles perfekt. Das Team war pünktlich, sauber und sehr freundlich. Die Qualität der Materialien ist erstklassig!'
-    },
-    {
-      author: 'Hans-Peter Wagner',
-      rating: 5,
-      date: 'vor 3 Monaten',
-      text: 'Schnelle und professionelle Badsanierung! Die Handwerker waren sehr erfahren und haben sauber gearbeitet. Das Ergebnis übertrifft unsere Erwartungen. Absolute Empfehlung!'
-    },
-    {
-      author: 'Ingrid Hoffmann',
-      rating: 5,
-      date: 'vor 4 Monaten',
-      text: 'Wir sind begeistert von unserem neuen barrierefreien Bad. Die Planung war individuell auf unsere Bedürfnisse zugeschnitten. Toller Service von Anfang bis Ende!'
-    },
-    {
-      author: 'Werner Fischer',
-      rating: 5,
-      date: 'vor 5 Monaten',
-      text: 'Die TOR GmbH hat unser Bad komplett saniert. Faire Preise, transparente Abwicklung und höchste Qualität. Nach 25 Jahren im Geschäft wissen sie, was sie tun!'
+      text: 'Für unsere Ferienwohnung genau der richtige Service. Schneller Wechselservice zwischen den Gästen und immer einwandfreie Sauberkeit!'
     }
   ];
 

@@ -62,10 +62,30 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-lg text-gray-600 mb-10 font-light leading-relaxed max-w-xl"
+              className="text-lg text-gray-600 mb-6 lg:mb-10 font-light leading-relaxed max-w-xl"
             >
               Von Glas- und Fensterreinigung bis zur Büroreinigung – wir sorgen für makellose Sauberkeit in allen Bereichen. Zuverlässig, gründlich und termingerecht.
             </motion.p>
+
+            {/* Mobile Image - Between subtitle and benefits */}
+            <motion.div
+              initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.55 }}
+              className="lg:hidden relative rounded-2xl overflow-hidden border border-tor-teal/30 shadow-xl mb-8"
+            >
+              <img
+                src="https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Professionelle Reinigung"
+                className="w-full h-[300px] object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tor-teal/90 to-transparent p-6">
+                <div className="text-xl font-light tracking-wide mb-1 text-white">Qualität & Zuverlässigkeit</div>
+                <div className="text-white/90 font-light text-sm">
+                  Professionelle Reinigung für Büro, Praxis, Hotel und Privat
+                </div>
+              </div>
+            </motion.div>
 
             <motion.div
               initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
