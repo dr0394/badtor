@@ -75,7 +75,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
               className="lg:hidden relative rounded-2xl overflow-hidden border border-tor-teal/30 shadow-xl mb-8"
             >
               <img
-                src="https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://i.imgur.com/H72xD3O.png"
                 alt="Professionelle Reinigung"
                 className="w-full h-[300px] object-cover"
               />
