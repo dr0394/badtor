@@ -1,0 +1,11 @@
+# Wandura Fulda - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://wandura-fulda.de/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
