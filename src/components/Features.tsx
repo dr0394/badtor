@@ -48,8 +48,8 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
   ];
 
   return (
-    <section id="features" className="py-24 bg-craft-navy relative overflow-hidden">
-      <div className="absolute inset-0 texture-dots opacity-20"></div>
+    <section id="features" className="py-24 bg-gradient-to-br from-clean-blue-dark via-clean-blue to-clean-aqua-dark relative overflow-hidden">
+      <div className="absolute inset-0 texture-grid opacity-15"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -57,16 +57,16 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-block bg-craft-copper/20 border-2 border-craft-copper px-6 py-3 rounded mb-6">
-            <span className="text-craft-copper font-bold text-xs tracking-[0.25em] uppercase">Unser Prozess</span>
+          <div className="inline-block bg-clean-aqua-light/30 border-3 border-clean-aqua-light px-6 py-3 rounded-xl mb-6 backdrop-blur-sm">
+            <span className="text-white font-bold text-xs tracking-[0.3em] uppercase drop-shadow-lg">Unser Prozess</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-white font-roboto">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-white font-roboto drop-shadow-2xl">
             Von Anfrage bis
             <br />
-            <span className="text-craft-copper">zur Fertigstellung</span>
+            <span className="text-clean-aqua-light">zur Perfektion</span>
           </h2>
-          <p className="text-base sm:text-lg text-craft-sand max-w-3xl mx-auto px-4 font-medium leading-relaxed">
-            Klar strukturiert und zuverlässig – Schritt für Schritt zu perfekter Sauberkeit
+          <p className="text-base sm:text-lg text-clean-ice max-w-3xl mx-auto px-4 font-bold leading-relaxed drop-shadow-lg">
+            Klar strukturiert und transparent – Ihr Weg zur kristallklaren Sauberkeit
           </p>
         </motion.div>
 
@@ -78,20 +78,20 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={isMobile ? {} : { y: -8, scale: 1.02 }}
+              whileHover={isMobile ? {} : { y: -10, scale: 1.03 }}
               className="relative"
             >
-              <div className="bg-craft-sand-light border-4 border-craft-copper rounded p-8 h-full hover:border-craft-rust transition-all shadow-xl">
-                <div className="absolute -top-5 -left-5 w-12 h-12 bg-craft-rust rounded flex items-center justify-center text-white font-bold shadow-xl border-b-4 border-craft-rust-dark">
+              <div className="bg-white border-4 border-clean-aqua rounded-2xl p-8 h-full hover:border-clean-aqua-light hover:shadow-2xl transition-all">
+                <div className="absolute -top-5 -left-5 w-14 h-14 bg-clean-aqua rounded-xl flex items-center justify-center text-white font-bold shadow-2xl border-b-4 border-clean-aqua-dark text-xl">
                   {index + 1}
                 </div>
-                <div className="w-16 h-16 bg-white border-4 border-craft-copper rounded flex items-center justify-center mb-6 shadow-lg">
-                  <step.icon className="w-8 h-8 text-craft-rust stroke-[2.5]" />
+                <div className="w-16 h-16 bg-clean-sky border-4 border-clean-aqua rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                  <step.icon className="w-8 h-8 text-clean-aqua stroke-[2.5]" />
                 </div>
-                <h3 className="text-xl font-bold tracking-tight text-craft-charcoal mb-3 font-roboto">
+                <h3 className="text-xl font-bold tracking-tight text-clean-navy mb-3 font-roboto">
                   {step.title}
                 </h3>
-                <p className="text-sm text-craft-gray font-medium leading-relaxed">
+                <p className="text-sm text-clean-blue font-bold leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -109,7 +109,7 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
             whileHover={isMobile ? {} : { scale: 1.05 }}
             whileTap={isMobile ? {} : { scale: 0.95 }}
             onClick={onOpenQuoteModal}
-            className="bg-craft-rust hover:bg-craft-rust-light text-white px-12 py-5 rounded font-bold text-base tracking-wide transition-all inline-flex items-center gap-3 shadow-2xl border-b-4 border-craft-rust-dark hover:border-craft-rust"
+            className="bg-clean-aqua hover:bg-clean-aqua-light text-white px-12 py-5 rounded-xl font-bold text-lg tracking-wide transition-all inline-flex items-center gap-3 shadow-2xl border-b-4 border-clean-aqua-dark hover:border-clean-aqua"
           >
             Jetzt Angebot anfragen
             <ArrowRight className="w-5 h-5 stroke-[3]" />

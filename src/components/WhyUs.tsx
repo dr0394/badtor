@@ -43,15 +43,8 @@ const WhyUs = ({ onOpenQuoteModal }: WhyUsProps) => {
   ];
 
   return (
-    <section id="why-us" className="relative py-24 overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.pexels.com/photos/4239119/pexels-photo-4239119.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Professionelle Reinigung"
-          className="w-full h-full object-cover opacity-5"
-        />
-      </div>
+    <section id="why-us" className="relative py-24 overflow-hidden bg-white">
+      <div className="absolute inset-0 z-0 texture-diagonal opacity-20"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -60,15 +53,15 @@ const WhyUs = ({ onOpenQuoteModal }: WhyUsProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-block bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-6">
-            <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Warum Prima?</span>
+          <div className="inline-block bg-clean-aqua/15 border-3 border-clean-aqua px-6 py-3 rounded-xl mb-6">
+            <span className="text-clean-aqua font-bold text-xs tracking-[0.3em] uppercase">Warum Prima?</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-clean-navy font-roboto">
             Ihr verlässlicher Partner
             <br />
-            <span className="text-tor-teal font-normal italic">für Reinigung</span>
+            <span className="text-clean-aqua">für Reinigung</span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed">
+          <p className="text-base sm:text-lg text-clean-blue max-w-3xl mx-auto px-4 font-bold leading-relaxed">
             Mit professionellem Service, höchster Qualität und einem engagierten Team
             setzen wir Maßstäbe in der Reinigungsbranche
           </p>
@@ -82,16 +75,16 @@ const WhyUs = ({ onOpenQuoteModal }: WhyUsProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={isMobile ? {} : { y: -5 }}
-              className="bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:border-tor-teal transition-all"
+              whileHover={isMobile ? {} : { y: -8, scale: 1.02 }}
+              className="bg-clean-sky border-4 border-clean-aqua rounded-2xl p-8 hover:border-clean-aqua-light hover:shadow-2xl transition-all"
             >
-              <div className="w-14 h-14 bg-tor-teal/10 rounded-xl flex items-center justify-center mb-6">
-                <reason.icon className="w-7 h-7 text-tor-teal stroke-[1.5]" />
+              <div className="w-16 h-16 bg-clean-aqua/15 rounded-xl flex items-center justify-center mb-6 border-2 border-clean-aqua">
+                <reason.icon className="w-8 h-8 text-clean-aqua stroke-[2.5]" />
               </div>
-              <h3 className="text-xl font-normal tracking-tight text-gray-900 mb-3">
+              <h3 className="text-xl font-bold tracking-tight text-clean-navy mb-3 font-roboto">
                 {reason.title}
               </h3>
-              <p className="text-sm text-gray-600 font-light leading-relaxed">
+              <p className="text-sm text-clean-blue font-bold leading-relaxed">
                 {reason.description}
               </p>
             </motion.div>
@@ -104,23 +97,23 @@ const WhyUs = ({ onOpenQuoteModal }: WhyUsProps) => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-tor-teal/10 via-tor-teal/5 to-transparent rounded-2xl p-8 sm:p-12 border border-tor-teal/20">
+          <div className="bg-gradient-to-r from-clean-aqua/15 via-clean-sky to-clean-aqua/10 rounded-2xl p-8 sm:p-12 border-4 border-clean-aqua shadow-xl">
             <div className="max-w-3xl mx-auto">
-              <h3 className="text-2xl sm:text-3xl font-light tracking-tight mb-4 text-gray-900">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 text-clean-navy font-roboto">
                 Überzeugen Sie sich selbst von unserer Qualität
               </h3>
-              <p className="text-base text-gray-600 font-light leading-relaxed mb-6">
+              <p className="text-base text-clean-blue font-bold leading-relaxed mb-6">
                 Kontaktieren Sie uns für ein kostenloses und unverbindliches Angebot.
                 Wir beraten Sie gerne persönlich und erstellen ein maßgeschneidertes Reinigungskonzept für Sie.
               </p>
               <motion.button
-                whileHover={isMobile ? {} : { scale: 1.02 }}
-                whileTap={isMobile ? {} : { scale: 0.98 }}
+                whileHover={isMobile ? {} : { scale: 1.05 }}
+                whileTap={isMobile ? {} : { scale: 0.95 }}
                 onClick={onOpenQuoteModal}
-                className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
+                className="bg-clean-aqua hover:bg-clean-aqua-light text-white px-10 py-4 rounded-xl font-bold text-base tracking-wide transition-all inline-flex items-center gap-2 shadow-xl border-b-4 border-clean-aqua-dark"
               >
                 Jetzt Angebot anfordern
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </motion.button>
             </div>
           </div>
