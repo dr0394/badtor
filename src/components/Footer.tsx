@@ -157,6 +157,9 @@ const Footer = () => {
                 <h3 className="font-normal text-lg mb-3 text-white font-roboto">Angaben gemäß § 5 TMG</h3>
                 <div className="text-gray-600 font-bold leading-relaxed space-y-2">
                   <p>Prima Reinigungsservice</p>
+                  <p>Ebru Özoglu</p>
+                  <p>Am Kostenberg 25</p>
+                  <p>42549 Velbert</p>
                   <div className="mt-4">
                     <p className="font-normal text-white font-roboto mb-2">Einsatzgebiet:</p>
                     <p>Velbert & Umgebung</p>
