@@ -1,0 +1,25 @@
+{
+  "name": "Prima Reinigungsservice Velbert",
+  "short_name": "Prima Reinigung",
+  "description": "Professionelle Reinigung in Velbert und Umgebung - Fensterreinigung, Büroreinigung, Praxisreinigung und mehr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00C9D4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "cleaning"],
+  "lang": "de",
+  "dir": "ltr"
+}

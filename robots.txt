@@ -1,11 +1,9 @@
-# Wandura Fulda - Robots.txt
+# Prima Reinigungsservice - Robots.txt
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
 
-# Sitemap
-Sitemap: https://wandura-fulda.de/sitemap.xml
+# Sitemaps
+Sitemap: https://prima-reinigung.de/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

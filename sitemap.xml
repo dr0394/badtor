@@ -5,50 +5,50 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://wandura-fulda.de/</loc>
-    <lastmod>2024-12-13</lastmod>
+    <loc>https://prima-reinigung.de/</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://wandura-fulda.de/#uber-uns</loc>
-    <lastmod>2024-12-13</lastmod>
+    <loc>https://prima-reinigung.de/#services</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://prima-reinigung.de/#about</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wandura-fulda.de/#leistungen</loc>
-    <lastmod>2024-12-13</lastmod>
+    <loc>https://prima-reinigung.de/#home-cleaning</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wandura-fulda.de/#galerie</loc>
-    <lastmod>2024-12-13</lastmod>
+    <loc>https://prima-reinigung.de/#gallery</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://wandura-fulda.de/#bewertungen</loc>
-    <lastmod>2024-12-13</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://prima-reinigung.de/#features</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://wandura-fulda.de/#team</loc>
-    <lastmod>2024-12-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://wandura-fulda.de/#kontakt</loc>
-    <lastmod>2024-12-13</lastmod>
+    <loc>https://prima-reinigung.de/#contact</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
