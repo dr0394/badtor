@@ -68,7 +68,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Praxis- & Kanzleienreinigung',
       shortDesc: 'Hygiene und Sauberkeit für höchste Ansprüche',
       fullDesc: 'Spezialisierte Reinigung für Arztpraxen, Kanzleien und professionelle Büros. Höchste Hygienestandards und diskrete Arbeitsweise.',
-      image: 'https://images.pexels.com/photos/8413204/pexels-photo-8413204.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/praxisreinigung.png',
       cta: 'Praxisreinigung planen',
       details: [
         'Desinfektion nach medizinischen Standards',
@@ -93,7 +93,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Treppenhausreinigung',
       shortDesc: 'Saubere und gepflegte Eingangsbereiche',
       fullDesc: 'Regelmäßige Treppenhausreinigung für Wohngebäude und Mehrfamilienhäuser. Für einen einladenden ersten Eindruck.',
-      image: 'https://images.pexels.com/photos/5301094/pexels-photo-5301094.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/treppenhausreinigung.png',
       cta: 'Treppenhausreinigung buchen',
       details: [
         'Treppenstufen und Handläufe',
@@ -118,7 +118,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Bau- & Grundreinigung',
       shortDesc: 'Nach der Baustelle kommt die Sauberkeit',
       fullDesc: 'Professionelle Endreinigung nach Bau- und Renovierungsarbeiten. Wir entfernen Baustaub und -schmutz gründlich und hinterlassen bezugsfertige Räume.',
-      image: 'https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/grundreinigung.png',
       cta: 'Baureinigung anfragen',
       details: [
         'Grobe und feine Bauendreinigung',
@@ -143,7 +143,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Hotel- & Ferienwohnung',
       shortDesc: 'Perfekte Sauberkeit für Ihre Gäste',
       fullDesc: 'Spezialisierte Reinigung für Hotels, Pensionen und Ferienwohnungen. Schneller Wechselservice und höchste Qualitätsstandards für zufriedene Gäste.',
-      image: 'https://images.pexels.com/photos/3769710/pexels-photo-3769710.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/hotelreinigung.png',
       cta: 'Hotelreinigung besprechen',
       details: [
         'Zimmerreinigung zwischen Gästen',
