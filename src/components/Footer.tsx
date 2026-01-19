@@ -131,7 +131,7 @@ const Footer = () => {
 
           <div className="border-t border-white/30 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
             <div className="text-sm text-white/80 font-bold">
-              © 2024 Prima Reinigungsservice. Alle Rechte vorbehalten.
+              © 2026 Prima Reinigungsservice. Alle Rechte vorbehalten.
             </div>
             <div className="text-sm text-white/80 font-bold">
               Professionelle Reinigung in Velbert & Umgebung
