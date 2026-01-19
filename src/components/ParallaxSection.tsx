@@ -71,7 +71,7 @@ const ParallaxSection = ({ onOpenQuoteModal }: ParallaxSectionProps) => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3 text-white">
-                    <CheckCircle2 className="w-5 h-5 text-tor-teal flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-clean-aqua flex-shrink-0" />
                     <span className="text-sm font-light">{benefit}</span>
                   </div>
                 ))}

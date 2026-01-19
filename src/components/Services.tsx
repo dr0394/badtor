@@ -172,28 +172,29 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
 
   return (
     <>
-      <section id="services" className="py-24 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="services" className="py-24 bg-gradient-to-br from-clean-sky via-white to-clean-ice relative overflow-hidden">
+        <div className="absolute inset-0 texture-dots opacity-20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <div className="inline-block bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-6">
-              <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Unsere Leistungen</span>
+            <div className="inline-block bg-clean-aqua/15 border-3 border-clean-aqua px-6 py-3 rounded-xl mb-6">
+              <span className="text-clean-aqua font-bold text-xs tracking-[0.3em] uppercase">Unsere Leistungen</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-clean-navy font-roboto">
               Professionelle Reinigung
               <br />
-              <span className="text-tor-teal font-normal italic">für jeden Bedarf</span>
+              <span className="text-clean-aqua">für jeden Bedarf</span>
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-clean-blue max-w-3xl mx-auto px-4 font-bold leading-relaxed">
               Von Fensterreinigung bis zur Hotelreinigung – wir bieten Ihnen das komplette Leistungsspektrum aus einer Hand
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -202,30 +203,31 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
                 onClick={() => setSelectedService(service)}
-                className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 hover:border-tor-teal hover:shadow-xl transition-all cursor-pointer"
+                whileHover={isMobile ? {} : { y: -10, scale: 1.02 }}
+                className="group relative overflow-hidden rounded-2xl bg-white border-4 border-clean-aqua hover:border-clean-aqua-light hover:shadow-2xl transition-all cursor-pointer"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-52 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                  <div className="absolute top-4 right-4 w-12 h-12 bg-white/95 backdrop-blur-sm rounded-lg flex items-center justify-center shadow-lg">
-                    <service.icon className="w-6 h-6 text-tor-teal stroke-[1.5]" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-clean-blue-dark/90 via-clean-blue/40 to-transparent" />
+                  <div className="absolute top-4 right-4 w-14 h-14 bg-clean-aqua backdrop-blur-sm rounded-xl flex items-center justify-center shadow-xl border-b-4 border-clean-aqua-dark">
+                    <service.icon className="w-7 h-7 text-white stroke-[2.5]" />
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-normal tracking-tight text-gray-900 group-hover:text-tor-teal transition-colors mb-2">
+                  <h3 className="text-xl font-bold tracking-tight text-clean-navy group-hover:text-clean-aqua transition-colors mb-2 font-roboto">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-gray-600 font-light leading-relaxed mb-4 line-clamp-2">
+                  <p className="text-sm text-clean-blue font-bold leading-relaxed mb-4 line-clamp-2">
                     {service.shortDesc}
                   </p>
-                  <div className="flex items-center text-tor-teal text-sm font-normal group-hover:gap-2 transition-all">
+                  <div className="flex items-center text-clean-aqua text-sm font-bold group-hover:gap-2 transition-all">
                     <span>Mehr erfahren</span>
-                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity stroke-[2.5]" />
                   </div>
                 </div>
               </motion.div>
@@ -238,21 +240,21 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
-            <div className="bg-gradient-to-br from-tor-teal/5 to-tor-teal/10 border border-tor-teal/20 rounded-2xl p-8 sm:p-12">
-              <h3 className="text-2xl sm:text-3xl font-light tracking-tight mb-4 text-gray-900">
+            <div className="bg-gradient-to-r from-clean-aqua/15 via-clean-sky to-clean-aqua/10 border-4 border-clean-aqua rounded-2xl p-8 sm:p-12 shadow-xl">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 text-clean-navy font-roboto">
                 Haben Sie spezielle Anforderungen?
               </h3>
-              <p className="text-base text-gray-600 font-light leading-relaxed mb-6 max-w-2xl mx-auto">
+              <p className="text-base text-clean-blue font-bold leading-relaxed mb-6 max-w-2xl mx-auto">
                 Kontaktieren Sie uns für eine individuelle Beratung und kostenloses Angebot. Wir erstellen Ihnen ein maßgeschneidertes Reinigungskonzept.
               </p>
               <motion.button
-                whileHover={isMobile ? {} : { scale: 1.02 }}
-                whileTap={isMobile ? {} : { scale: 0.98 }}
+                whileHover={isMobile ? {} : { scale: 1.05 }}
+                whileTap={isMobile ? {} : { scale: 0.95 }}
                 onClick={onOpenQuoteModal}
-                className="bg-tor-teal hover:bg-tor-teal-light text-white px-10 py-4 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2 shadow-lg"
+                className="bg-clean-aqua hover:bg-clean-aqua-light text-white px-10 py-4 rounded-xl font-bold text-base tracking-wide transition-all inline-flex items-center gap-2 shadow-xl border-b-4 border-clean-aqua-dark"
               >
                 Jetzt Angebot anfordern
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </motion.button>
             </div>
           </motion.div>

@@ -70,13 +70,13 @@ const ServiceModal = ({ isOpen, onClose, onRequestQuote, service }: ServiceModal
               <div className="p-8 space-y-8">
                 <div>
                   <h3 className="text-xl font-normal text-gray-900 mb-4 flex items-center gap-2">
-                    <div className="w-1 h-6 bg-tor-teal rounded-full" />
+                    <div className="w-1 h-6 bg-clean-aqua rounded-full" />
                     Leistungsdetails
                   </h3>
                   <ul className="space-y-3">
                     {service.details.map((detail, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-tor-teal flex-shrink-0 mt-0.5 stroke-[1.5]" />
+                        <CheckCircle2 className="w-5 h-5 text-clean-aqua flex-shrink-0 mt-0.5 stroke-[1.5]" />
                         <span className="text-sm text-gray-700 font-light leading-relaxed">{detail}</span>
                       </li>
                     ))}
@@ -85,20 +85,20 @@ const ServiceModal = ({ isOpen, onClose, onRequestQuote, service }: ServiceModal
 
                 <div>
                   <h3 className="text-xl font-normal text-gray-900 mb-4 flex items-center gap-2">
-                    <div className="w-1 h-6 bg-tor-teal rounded-full" />
+                    <div className="w-1 h-6 bg-clean-aqua rounded-full" />
                     Ihre Vorteile
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {service.benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3 bg-gray-50 border border-gray-200 rounded-lg p-4">
-                        <CheckCircle2 className="w-5 h-5 text-tor-teal flex-shrink-0 mt-0.5 stroke-[1.5]" />
+                        <CheckCircle2 className="w-5 h-5 text-clean-aqua flex-shrink-0 mt-0.5 stroke-[1.5]" />
                         <span className="text-sm text-gray-700 font-light leading-relaxed">{benefit}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-tor-teal/10 to-transparent border border-tor-teal/20 rounded-xl p-6">
+                <div className="bg-gradient-to-r from-clean-aqua/10 to-transparent border border-clean-aqua/20 rounded-xl p-6">
                   <h3 className="text-lg font-normal text-gray-900 mb-2">
                     Interessiert an dieser Dienstleistung?
                   </h3>
@@ -108,7 +108,7 @@ const ServiceModal = ({ isOpen, onClose, onRequestQuote, service }: ServiceModal
                   </p>
                   <button
                     onClick={handleContactClick}
-                    className="bg-tor-teal hover:bg-tor-teal-light text-white px-6 py-3 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
+                    className="bg-clean-aqua hover:bg-clean-aqua-light text-white px-6 py-3 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
                   >
                     Jetzt Vermessungstermin buchen
                     <ArrowRight className="w-4 h-4" />

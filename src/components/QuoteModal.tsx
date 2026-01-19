@@ -147,7 +147,7 @@ ${formData.firstName} ${formData.lastName}`;
                     <div
                       key={i}
                       className={`flex-1 h-2 rounded-full transition-all ${
-                        i <= step ? 'bg-tor-teal' : 'bg-gray-200'
+                        i <= step ? 'bg-clean-aqua' : 'bg-gray-200'
                       }`}
                     />
                   ))}
@@ -172,12 +172,12 @@ ${formData.firstName} ${formData.lastName}`;
                             onClick={() => setFormData({ ...formData, projectType: type.value })}
                             className={`p-4 border-2 rounded-xl transition-all text-left ${
                               formData.projectType === type.value
-                                ? 'border-tor-teal bg-tor-teal/5'
+                                ? 'border-clean-aqua bg-clean-aqua/5'
                                 : 'border-gray-200 hover:border-gray-300'
                             }`}
                           >
                             <type.icon className={`w-6 h-6 mb-2 ${
-                              formData.projectType === type.value ? 'text-tor-teal' : 'text-gray-600'
+                              formData.projectType === type.value ? 'text-clean-aqua' : 'text-gray-600'
                             }`} />
                             <div className="text-sm font-normal">{type.label}</div>
                           </button>
@@ -206,7 +206,7 @@ ${formData.firstName} ${formData.lastName}`;
                             value={formData.area}
                             onChange={(e) => setFormData({ ...formData, area: e.target.value })}
                             placeholder="z.B. 50"
-                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors"
+                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-clean-aqua transition-colors"
                           />
                         </div>
 
@@ -219,7 +219,7 @@ ${formData.firstName} ${formData.lastName}`;
                                 onClick={() => setFormData({ ...formData, timeframe: time.value })}
                                 className={`w-full p-3 border-2 rounded-lg transition-all text-left text-sm ${
                                   formData.timeframe === time.value
-                                    ? 'border-tor-teal bg-tor-teal/5'
+                                    ? 'border-clean-aqua bg-clean-aqua/5'
                                     : 'border-gray-200 hover:border-gray-300'
                                 }`}
                               >
@@ -236,7 +236,7 @@ ${formData.firstName} ${formData.lastName}`;
                             onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
                             rows={4}
                             placeholder="Beschreiben Sie hier weitere Details zu Ihrem Projekt..."
-                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors resize-none"
+                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-clean-aqua transition-colors resize-none"
                           />
                         </div>
                       </div>
@@ -263,7 +263,7 @@ ${formData.firstName} ${formData.lastName}`;
                               type="text"
                               value={formData.firstName}
                               onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors"
+                              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-clean-aqua transition-colors"
                             />
                           </div>
                           <div>
@@ -272,7 +272,7 @@ ${formData.firstName} ${formData.lastName}`;
                               type="text"
                               value={formData.lastName}
                               onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors"
+                              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-clean-aqua transition-colors"
                             />
                           </div>
                         </div>
@@ -283,7 +283,7 @@ ${formData.firstName} ${formData.lastName}`;
                             type="email"
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors"
+                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-clean-aqua transition-colors"
                           />
                         </div>
 
@@ -293,7 +293,7 @@ ${formData.firstName} ${formData.lastName}`;
                             type="tel"
                             value={formData.phone}
                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors"
+                            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-clean-aqua transition-colors"
                           />
                         </div>
                       </div>
@@ -322,7 +322,7 @@ ${formData.firstName} ${formData.lastName}`;
                     disabled={!canProceed()}
                     className={`flex items-center gap-2 px-6 py-3 rounded-lg font-normal transition-all ${
                       canProceed()
-                        ? 'bg-tor-teal hover:bg-tor-teal/90 text-white'
+                        ? 'bg-clean-aqua hover:bg-clean-aqua/90 text-white'
                         : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                     }`}
                   >
@@ -335,7 +335,7 @@ ${formData.firstName} ${formData.lastName}`;
                     disabled={!canProceed()}
                     className={`flex items-center gap-2 px-6 py-3 rounded-lg font-normal transition-all ${
                       canProceed()
-                        ? 'bg-tor-teal hover:bg-tor-teal/90 text-white'
+                        ? 'bg-clean-aqua hover:bg-clean-aqua/90 text-white'
                         : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                     }`}
                   >

@@ -6,7 +6,6 @@ import WhyUs from './components/WhyUs';
 import Services from './components/Services';
 import ParallaxSection from './components/ParallaxSection';
 import HomeCleaning from './components/HomeCleaning';
-import BeforeAfter from './components/BeforeAfter';
 import Gallery from './components/Gallery';
 import Features from './components/Features';
 import GoogleReviews from './components/GoogleReviews';
@@ -42,7 +41,6 @@ function App() {
       <About onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <ParallaxSection onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <HomeCleaning onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
-      <BeforeAfter />
       <Gallery />
       <Features onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />
       <WhyUs onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />

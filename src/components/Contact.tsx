@@ -57,33 +57,34 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 bg-gradient-to-br from-clean-sky via-white to-clean-ice relative overflow-hidden">
+      <div className="absolute inset-0 texture-grid opacity-15"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <div className="inline-block bg-tor-teal/10 border border-tor-teal/30 px-5 py-2 rounded-full mb-6">
-            <span className="text-tor-teal font-light text-xs tracking-[0.2em] uppercase">Kontakt</span>
+          <div className="inline-block bg-clean-aqua/15 border-3 border-clean-aqua px-6 py-3 rounded-xl mb-6">
+            <span className="text-clean-aqua font-bold text-xs tracking-[0.3em] uppercase">Kontakt</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-clean-navy font-roboto">
             Sauberkeit beginnt
             <br />
-            <span className="text-tor-teal font-normal italic">mit einem Anruf</span>
+            <span className="text-clean-aqua">mit einem Anruf</span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-light leading-relaxed mb-6">
+          <p className="text-base sm:text-lg text-clean-blue max-w-3xl mx-auto px-4 font-bold leading-relaxed mb-6">
             Kontaktieren Sie uns für eine kostenlose Beratung. Wir erstellen Ihnen ein unverbindliches Angebot
           </p>
           <motion.button
-            whileHover={isMobile ? {} : { scale: 1.02 }}
-            whileTap={isMobile ? {} : { scale: 0.98 }}
+            whileHover={isMobile ? {} : { scale: 1.05 }}
+            whileTap={isMobile ? {} : { scale: 0.95 }}
             onClick={onOpenQuoteModal}
-            className="bg-tor-teal hover:bg-tor-teal-light text-white px-8 py-3 rounded-md font-normal text-sm tracking-wide transition-all inline-flex items-center gap-2"
+            className="bg-clean-aqua hover:bg-clean-aqua-light text-white px-8 py-3 rounded-xl font-bold text-base tracking-wide transition-all inline-flex items-center gap-2 shadow-xl border-b-4 border-clean-aqua-dark"
           >
             Schnell-Anfrage starten
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-5 h-5" />
           </motion.button>
         </motion.div>
 
@@ -101,16 +102,17 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-white border border-gray-200 rounded-xl p-6"
+                  whileHover={isMobile ? {} : { y: -5 }}
+                  className="bg-white border-4 border-clean-aqua rounded-xl p-6 hover:border-clean-aqua-light hover:shadow-xl transition-all"
                 >
-                  <info.icon className="w-7 h-7 text-tor-teal mb-3 stroke-[1.5]" />
-                  <div className="text-xs font-normal text-gray-600 mb-1">{info.label}</div>
+                  <info.icon className="w-7 h-7 text-clean-aqua mb-3 stroke-[2.5]" />
+                  <div className="text-xs font-bold text-clean-blue mb-1">{info.label}</div>
                   {info.link ? (
-                    <a href={info.link} className="text-sm font-light text-gray-900 hover:text-tor-teal-light transition-colors">
+                    <a href={info.link} className="text-sm font-bold text-clean-navy hover:text-clean-aqua transition-colors">
                       {info.value}
                     </a>
                   ) : (
-                    <div className="text-sm font-light text-gray-900">{info.value}</div>
+                    <div className="text-sm font-bold text-clean-navy">{info.value}</div>
                   )}
                 </motion.div>
               ))}
@@ -120,14 +122,14 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
               initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white border border-gray-200 rounded-xl p-6"
+              className="bg-white border-4 border-clean-aqua rounded-xl p-6 shadow-lg"
             >
-              <h3 className="font-normal text-base mb-2 text-gray-900">Unser Einsatzgebiet</h3>
-              <p className="text-sm text-gray-500 font-light mb-4">
+              <h3 className="font-bold text-base mb-2 text-clean-navy">Unser Einsatzgebiet</h3>
+              <p className="text-sm text-clean-blue font-bold mb-4">
                 Wir sind für Sie in Velbert und Umgebung im Einsatz
               </p>
-              <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
-                <MapPin className="w-10 h-10 text-tor-teal stroke-[1.5]" />
+              <div className="bg-clean-sky rounded-xl h-48 flex items-center justify-center border-2 border-clean-aqua">
+                <MapPin className="w-12 h-12 text-clean-aqua stroke-[2.5]" />
               </div>
             </motion.div>
           </motion.div>
@@ -137,26 +139,26 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8">
+            <form onSubmit={handleSubmit} className="bg-white border-4 border-clean-aqua rounded-2xl p-8 shadow-xl">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label className="block text-sm font-normal mb-2 text-gray-900">Vorname *</label>
+                  <label className="block text-sm font-bold mb-2 text-clean-navy">Vorname *</label>
                   <input
                     type="text"
                     required
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors font-light text-gray-900"
+                    className="w-full px-4 py-3 bg-clean-sky border-2 border-clean-aqua rounded-xl focus:outline-none focus:border-clean-aqua-light transition-colors font-bold text-clean-navy"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-normal mb-2 text-gray-900">Nachname *</label>
+                  <label className="block text-sm font-bold mb-2 text-clean-navy">Nachname *</label>
                   <input
                     type="text"
                     required
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors font-light text-gray-900"
+                    className="w-full px-4 py-3 bg-clean-sky border-2 border-clean-aqua rounded-xl focus:outline-none focus:border-clean-aqua-light transition-colors font-bold text-clean-navy"
                   />
                 </div>
               </div>
@@ -189,7 +191,7 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-tor-teal transition-colors resize-none font-light text-gray-900"
+                  className="w-full px-4 py-3 bg-clean-sky border-2 border-clean-aqua rounded-xl focus:outline-none focus:border-clean-aqua-light transition-colors resize-none font-bold text-clean-navy"
                 />
               </div>
 
@@ -209,14 +211,14 @@ const Contact = ({ onOpenQuoteModal }: ContactProps) => {
               </div>
 
               {isSubmitted ? (
-                <div className="bg-tor-teal text-white px-6 py-4 rounded-lg flex items-center gap-3">
+                <div className="bg-clean-aqua text-white px-6 py-4 rounded-xl flex items-center gap-3 border-b-4 border-clean-aqua-dark">
                   <CheckCircle className="w-5 h-5 stroke-[1.5]" />
                   <span className="font-normal">Vielen Dank! Wir melden uns bei Ihnen.</span>
                 </div>
               ) : (
                 <button
                   type="submit"
-                  className="w-full bg-tor-teal hover:bg-tor-teal-light text-white px-6 py-4 rounded-lg font-normal tracking-wide transition-all flex items-center justify-center gap-2"
+                  className="w-full bg-clean-aqua hover:bg-clean-aqua-light text-white px-6 py-4 rounded-xl font-bold tracking-wide transition-all flex items-center justify-center gap-2 shadow-xl border-b-4 border-clean-aqua-dark"
                 >
                   <Send className="w-4 h-4 stroke-[1.5]" />
                   Nachricht senden
