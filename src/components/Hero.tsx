@@ -56,7 +56,7 @@ const Hero = ({ onOpenQuoteModal }: HeroProps) => {
             >
               Kristallklare Sauberkeit
               <br />
-              <span className="text-clean-aqua-light">für Ihr Business</span>
+              <span className="text-clean-aqua-light">für Ihr Objekt</span>
             </motion.h1>
 
             <motion.p
