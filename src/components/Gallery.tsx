@@ -9,28 +9,28 @@ const Gallery = () => {
 
   const projects = [
     {
-      src: 'https://images.pexels.com/photos/4239119/pexels-photo-4239119.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'Fensterreinigung',
+      src: 'https://images.pexels.com/photos/4239146/pexels-photo-4239146.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Professionelle Reinigung',
     },
     {
       src: 'https://images.pexels.com/photos/4239039/pexels-photo-4239039.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Büroreinigung',
     },
     {
-      src: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      src: 'https://images.pexels.com/photos/6195276/pexels-photo-6195276.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Gewerbliche Reinigung',
-    },
-    {
-      src: 'https://images.pexels.com/photos/5824471/pexels-photo-5824471.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'Gründliche Bodenreinigung',
     },
     {
       src: 'https://images.pexels.com/photos/4239146/pexels-photo-4239146.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Sanitärreinigung',
     },
     {
-      src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'Professionelle Reinigung',
+      src: 'https://images.pexels.com/photos/4239039/pexels-photo-4239039.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Gründliche Reinigung',
+    },
+    {
+      src: 'https://images.pexels.com/photos/6195276/pexels-photo-6195276.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Fensterreinigung',
     },
   ];
 
