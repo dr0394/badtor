@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gradient-to-br from-clean-navy via-clean-blue-dark to-clean-navy border-t-4 border-clean-aqua">
+      <footer className="bg-gradient-to-br from-clean-aqua-dark via-clean-aqua to-clean-aqua-dark border-t-4 border-clean-aqua-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-8 sm:mb-12">
             <div>
@@ -32,21 +32,21 @@ const Footer = () => {
                   className="h-16 w-auto"
                 />
               </div>
-              <p className="text-clean-ice text-sm leading-relaxed mb-6 font-bold">
+              <p className="text-white text-sm leading-relaxed mb-6 font-bold">
                 Ihr zuverlässiger Partner für professionelle Reinigung in Velbert und Umgebung. Sauberkeit, Qualität und Zuverlässigkeit.
               </p>
               <div className="flex gap-3">
                 <a
                   href="#"
-                  className="w-12 h-12 bg-clean-aqua border-2 border-clean-aqua hover:bg-clean-aqua-light rounded-xl flex items-center justify-center transition-colors shadow-lg"
+                  className="w-12 h-12 bg-white border-2 border-white hover:bg-clean-ice rounded-xl flex items-center justify-center transition-colors shadow-lg"
                 >
-                  <Facebook className="w-6 h-6 text-white" />
+                  <Facebook className="w-6 h-6 text-clean-aqua" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-clean-aqua border-2 border-clean-aqua hover:bg-clean-aqua-light rounded-xl flex items-center justify-center transition-colors shadow-lg"
+                  className="w-12 h-12 bg-white border-2 border-white hover:bg-clean-ice rounded-xl flex items-center justify-center transition-colors shadow-lg"
                 >
-                  <Instagram className="w-6 h-6 text-white" />
+                  <Instagram className="w-6 h-6 text-clean-aqua" />
                 </a>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <li key={index}>
                     <button
                       onClick={() => scrollToSection('services')}
-                      className="text-clean-ice hover:text-clean-aqua-light transition-colors text-sm font-bold text-left"
+                      className="text-white hover:text-clean-ice transition-colors text-sm font-bold text-left"
                     >
                       {service}
                     </button>
@@ -73,7 +73,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="tel:+4920514360763"
-                    className="text-clean-ice hover:text-clean-aqua-light transition-colors font-bold"
+                    className="text-white hover:text-clean-ice transition-colors font-bold"
                   >
                     02051 / 436 0 763
                   </a>
@@ -81,7 +81,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="mailto:Info.prima.rs@gmail.com"
-                    className="text-clean-ice hover:text-clean-aqua-light transition-colors font-bold"
+                    className="text-white hover:text-clean-ice transition-colors font-bold"
                   >
                     Info.prima.rs@gmail.com
                   </a>
@@ -91,13 +91,13 @@ const Footer = () => {
                     href="https://www.instagram.com/Prima.reinigungsservice"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-clean-ice hover:text-clean-aqua-light transition-colors font-bold flex items-center gap-2"
+                    className="text-white hover:text-clean-ice transition-colors font-bold flex items-center gap-2"
                   >
                     <Instagram className="w-4 h-4" />
                     Prima.reinigungsservice
                   </a>
                 </li>
-                <li className="text-gray-600 font-bold">
+                <li className="text-white font-bold">
                   Einsatzgebiet:
                   <br />
                   Velbert & Umgebung
@@ -111,7 +111,7 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => setShowImpressum(true)}
-                    className="text-clean-ice hover:text-clean-aqua-light transition-colors text-sm font-bold"
+                    className="text-white hover:text-clean-ice transition-colors text-sm font-bold"
                   >
                     Impressum
                   </button>
@@ -119,25 +119,25 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => setShowDatenschutz(true)}
-                    className="text-clean-ice hover:text-clean-aqua-light transition-colors text-sm font-bold"
+                    className="text-white hover:text-clean-ice transition-colors text-sm font-bold"
                   >
                     Datenschutzerklärung
                   </button>
                 </li>
               </ul>
-              <div className="mt-6 bg-white border border-gray-200 rounded-lg p-4">
-                <div className="text-xs text-gray-500 mb-2 font-bold">Service-Qualität</div>
-                <div className="text-sm font-normal text-white font-roboto">100%</div>
-                <div className="text-xs text-gray-500 font-bold">Zufriedenheit</div>
+              <div className="mt-6 bg-white border-2 border-white rounded-lg p-4">
+                <div className="text-xs text-clean-aqua mb-2 font-bold">Service-Qualität</div>
+                <div className="text-sm font-bold text-clean-aqua font-roboto">100%</div>
+                <div className="text-xs text-clean-aqua font-bold">Zufriedenheit</div>
               </div>
             </div>
           </div>
 
-          <div className="border-t border-gray-200 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-            <div className="text-sm text-gray-500 font-bold">
+          <div className="border-t border-white/30 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+            <div className="text-sm text-white/80 font-bold">
               © 2024 Prima Reinigungsservice. Alle Rechte vorbehalten.
             </div>
-            <div className="text-sm text-gray-500 font-bold">
+            <div className="text-sm text-white/80 font-bold">
               Professionelle Reinigung in Velbert & Umgebung
             </div>
           </div>

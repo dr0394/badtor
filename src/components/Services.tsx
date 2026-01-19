@@ -43,7 +43,7 @@ const Services = ({ onOpenQuoteModal }: ServicesProps) => {
       title: 'Büro & Unterhaltsreinigung',
       shortDesc: 'Saubere Arbeitsumgebung für produktives Arbeiten',
       fullDesc: 'Regelmäßige und zuverlässige Büroreinigung für ein gepflegtes Arbeitsumfeld. Wir sorgen für Sauberkeit und Hygiene in Ihren Geschäftsräumen.',
-      image: '/büroreinigung.png',
+      image: 'https://images.pexels.com/photos/4239122/pexels-photo-4239122.jpeg?auto=compress&cs=tinysrgb&w=800',
       cta: 'Büroreinigung anfragen',
       details: [
         'Tägliche oder wöchentliche Reinigung',

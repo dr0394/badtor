@@ -12,38 +12,18 @@ const Features = ({ onOpenQuoteModal }: FeaturesProps) => {
   const steps = [
     {
       icon: Phone,
-      title: 'Anfrage stellen',
-      description: 'Kontaktieren Sie uns telefonisch, per E-Mail oder über unser Kontaktformular'
-    },
-    {
-      icon: Ruler,
-      title: 'Besichtigung vor Ort',
-      description: 'Wir vereinbaren einen Termin und besichtigen die zu reinigenden Räumlichkeiten'
+      title: 'Anfrage & Beratung',
+      description: 'Kontaktieren Sie uns für ein kostenloses Erstgespräch. Wir beraten Sie persönlich und besichtigen vor Ort Ihre Räumlichkeiten.'
     },
     {
       icon: PenTool,
       title: 'Individuelles Angebot',
-      description: 'Sie erhalten ein maßgeschneidertes Angebot basierend auf Ihren Anforderungen'
+      description: 'Sie erhalten ein maßgeschneidertes Angebot mit transparenter Preisgestaltung, abgestimmt auf Ihre speziellen Anforderungen.'
     },
     {
       icon: CheckCircle2,
-      title: 'Terminvereinbarung',
-      description: 'Wir planen die Reinigung flexibel nach Ihrem Zeitplan'
-    },
-    {
-      icon: Hammer,
       title: 'Professionelle Durchführung',
-      description: 'Unser geschultes Team führt die Reinigung gründlich und zuverlässig durch'
-    },
-    {
-      icon: Key,
-      title: 'Qualitätskontrolle',
-      description: 'Wir überprüfen das Ergebnis und stellen sicher, dass Sie zufrieden sind'
-    },
-    {
-      icon: HeadphonesIcon,
-      title: 'Regelmäßiger Service',
-      description: 'Auf Wunsch bieten wir Ihnen regelmäßige Reinigungsverträge an'
+      description: 'Unser geschultes Team führt die Reinigung termingerecht und gründlich durch. Regelmäßige Qualitätskontrollen garantieren Ihre Zufriedenheit.'
     }
   ];
 
