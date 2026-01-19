@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import { useState } from 'react';
 
 const Footer = () => {
@@ -37,13 +37,9 @@ const Footer = () => {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="#"
-                  className="w-12 h-12 bg-white border-2 border-white hover:bg-clean-ice rounded-xl flex items-center justify-center transition-colors shadow-lg"
-                >
-                  <Facebook className="w-6 h-6 text-clean-aqua" />
-                </a>
-                <a
-                  href="#"
+                  href="https://www.instagram.com/prima.reinigungsservice/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-white border-2 border-white hover:bg-clean-ice rounded-xl flex items-center justify-center transition-colors shadow-lg"
                 >
                   <Instagram className="w-6 h-6 text-clean-aqua" />
@@ -88,7 +84,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/Prima.reinigungsservice"
+                    href="https://www.instagram.com/prima.reinigungsservice/?hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-clean-ice transition-colors font-bold flex items-center gap-2"

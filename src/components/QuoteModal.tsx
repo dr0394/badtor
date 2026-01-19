@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronRight, ChevronLeft, Home, Paintbrush, Building2, Leaf, LayoutGrid, Wallpaper, Mail } from 'lucide-react';
+import { X, ChevronRight, ChevronLeft, Home, Paintbrush, Building2, Leaf, LayoutGrid, Wallpaper, Mail, MessageCircle } from 'lucide-react';
 
 interface QuoteModalProps {
   isOpen: boolean;
@@ -49,7 +49,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
   ];
 
   const handleNext = () => {
-    if (step < 3) setStep(step + 1);
+    if (step < 4) setStep(step + 1);
   };
 
   const handleBack = () => {
@@ -57,6 +57,10 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
   };
 
   const handleSubmit = () => {
+    setStep(4);
+  };
+
+  const generateMailtoLink = () => {
     const selectedProject = projectTypes.find(p => p.value === formData.projectType);
     const selectedTimeframe = timeframes.find(t => t.value === formData.timeframe);
 
@@ -82,10 +86,35 @@ Ich freue mich auf Ihre Rückmeldung und ein unverbindliches Angebot.
 Mit freundlichen Grüßen
 ${formData.firstName} ${formData.lastName}`;
 
-    const mailtoLink = `mailto:Info.prima.rs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    return `mailto:Info.prima.rs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
 
-    handleClose();
+  const generateWhatsAppLink = () => {
+    const selectedProject = projectTypes.find(p => p.value === formData.projectType);
+    const selectedTimeframe = timeframes.find(t => t.value === formData.timeframe);
+
+    const message = `Hallo Prima Reinigungsservice Team,
+
+ich interessiere mich für folgende Dienstleistung:
+
+*Dienstleistung:* ${selectedProject?.label || formData.projectType}
+*Fläche:* ${formData.area} m²
+*Zeitrahmen:* ${selectedTimeframe?.label || formData.timeframe}
+
+*Zusätzliche Informationen:*
+${formData.additionalInfo || 'Keine'}
+
+*Meine Kontaktdaten:*
+Name: ${formData.firstName} ${formData.lastName}
+E-Mail: ${formData.email}
+Telefon: ${formData.phone}
+
+Ich freue mich auf Ihre Rückmeldung und ein unverbindliches Angebot.
+
+Mit freundlichen Grüßen
+${formData.firstName} ${formData.lastName}`;
+
+    return `https://wa.me/4920514360763?text=${encodeURIComponent(message)}`;
   };
 
   const handleClose = () => {
@@ -131,7 +160,7 @@ ${formData.firstName} ${formData.lastName}`;
               <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between z-10">
                 <div>
                   <h2 className="text-2xl font-normal text-gray-900">Angebot anfragen</h2>
-                  <p className="text-sm text-gray-500 font-light mt-1">Schritt {step} von 3</p>
+                  <p className="text-sm text-gray-500 font-light mt-1">Schritt {step > 3 ? 3 : step} von 3</p>
                 </div>
                 <button
                   onClick={handleClose}
@@ -142,16 +171,18 @@ ${formData.firstName} ${formData.lastName}`;
               </div>
 
               <div className="p-6">
-                <div className="flex gap-2 mb-8">
-                  {[1, 2, 3].map((i) => (
-                    <div
-                      key={i}
-                      className={`flex-1 h-2 rounded-full transition-all ${
-                        i <= step ? 'bg-clean-aqua' : 'bg-gray-200'
-                      }`}
-                    />
-                  ))}
-                </div>
+                {step <= 3 && (
+                  <div className="flex gap-2 mb-8">
+                    {[1, 2, 3].map((i) => (
+                      <div
+                        key={i}
+                        className={`flex-1 h-2 rounded-full transition-all ${
+                          i <= step ? 'bg-clean-aqua' : 'bg-gray-200'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                )}
 
                 <AnimatePresence mode="wait">
                   {step === 1 && (
@@ -299,10 +330,62 @@ ${formData.firstName} ${formData.lastName}`;
                       </div>
                     </motion.div>
                   )}
+
+                  {step === 4 && (
+                    <motion.div
+                      key="step4"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      className="text-center py-8"
+                    >
+                      <div className="mb-8">
+                        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <h3 className="text-2xl font-normal text-gray-900 mb-2">Vielen Dank!</h3>
+                        <p className="text-gray-600 font-light mb-8">
+                          Ihre Anfrage ist bereit. Wählen Sie, wie Sie uns kontaktieren möchten:
+                        </p>
+                      </div>
+
+                      <div className="space-y-4 max-w-md mx-auto">
+                        <a
+                          href={generateWhatsAppLink()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={handleClose}
+                          className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-3 shadow-lg border-b-4 border-[#20BA5A]"
+                        >
+                          <MessageCircle className="w-5 h-5" />
+                          Per WhatsApp senden
+                        </a>
+
+                        <a
+                          href={generateMailtoLink()}
+                          onClick={handleClose}
+                          className="w-full bg-clean-aqua hover:bg-clean-aqua-light text-white px-6 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-3 shadow-lg border-b-4 border-clean-aqua-dark"
+                        >
+                          <Mail className="w-5 h-5" />
+                          Per E-Mail senden
+                        </a>
+                      </div>
+
+                      <button
+                        onClick={handleClose}
+                        className="mt-8 text-gray-500 hover:text-gray-700 text-sm font-light"
+                      >
+                        Formular schließen
+                      </button>
+                    </motion.div>
+                  )}
                 </AnimatePresence>
               </div>
 
-              <div className="sticky bottom-0 bg-white border-t border-gray-200 p-6 flex items-center justify-between">
+              {step <= 3 && (
+                <div className="sticky bottom-0 bg-white border-t border-gray-200 p-6 flex items-center justify-between">
                 <button
                   onClick={handleBack}
                   disabled={step === 1}
@@ -339,11 +422,12 @@ ${formData.firstName} ${formData.lastName}`;
                         : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                     }`}
                   >
-                    <Mail className="w-4 h-4" />
-                    Anfrage senden
+                    Weiter zur Kontaktauswahl
+                    <ChevronRight className="w-4 h-4" />
                   </button>
                 )}
-              </div>
+                </div>
+              )}
             </motion.div>
           </div>
         </>

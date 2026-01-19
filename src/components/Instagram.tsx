@@ -4,7 +4,7 @@ import { useReducedMotion } from '../hooks/useReducedMotion';
 
 const Instagram = () => {
   const isMobile = useReducedMotion();
-  const instagramUrl = 'https://www.instagram.com/wandura_e.k/reels/';
+  const instagramUrl = 'https://www.instagram.com/prima.reinigungsservice/?hl=en';
 
   return (
     <section id="instagram" className="py-16 sm:py-24 bg-gray-50">
@@ -38,9 +38,9 @@ const Instagram = () => {
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-2xl mb-6">
               <InstagramIcon className="w-10 h-10 text-white" />
             </div>
-            <h3 className="text-2xl font-normal text-gray-900 mb-3">@wandura_e.k</h3>
+            <h3 className="text-2xl font-normal text-gray-900 mb-3">@prima.reinigungsservice</h3>
             <p className="text-gray-600 mb-8 font-light max-w-md mx-auto">
-              Besuche unser Instagram-Profil und sieh dir unsere Reels an – echte Projekte, echte Ergebnisse
+              Besuche unser Instagram-Profil und sieh dir unsere Posts an – echte Projekte, echte Ergebnisse
             </p>
             <motion.a
               href={instagramUrl}
@@ -91,7 +91,7 @@ const Instagram = () => {
         >
           <p className="text-sm text-gray-500 font-light">
             Markiere uns in deinen Stories mit{' '}
-            <span className="text-wandura-olive font-normal">@wandura_e.k</span> und wir teilen deine Transformation
+            <span className="text-wandura-olive font-normal">@prima.reinigungsservice</span> und wir teilen deine Transformation
           </p>
         </motion.div>
       </div>
